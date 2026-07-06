@@ -1,11 +1,21 @@
 <section class="home-hero">
-  <p class="home-eyebrow"><%= profile.role %> at <%= profile.employer %></p>
+  <p class="home-eyebrow"><%= profile.role %> at <%= profile.employer %><% if (profile.degree) { %> · <%= profile.degree %><% } %></p>
   <h1 class="home-title"><%= profile.name %></h1>
   <% profile.about.forEach(function(paragraph) { %>
     <p class="home-about-text"><%= paragraph %></p>
   <% }); %>
   <% if (profile.email) { %>
     <a href="mailto:<%= profile.email %>" class="home-cta"><%= profile.email %></a>
+  <% } %>
+  <% if (profile.social && (profile.social.linkedin || profile.social.github)) { %>
+    <div class="home-social">
+      <% if (profile.social.linkedin) { %>
+        <a href="<%= profile.social.linkedin %>" class="home-social-link" target="_blank" rel="noopener">LinkedIn</a>
+      <% } %>
+      <% if (profile.social.github) { %>
+        <a href="<%= profile.social.github %>" class="home-social-link" target="_blank" rel="noopener">GitHub</a>
+      <% } %>
+    </div>
   <% } %>
 </section>
 

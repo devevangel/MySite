@@ -211,9 +211,9 @@ app.use((_req, res) => {
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`Site running at http://localhost:${PORT}`);
-  console.log(`  Tech:  http://localhost:${PORT}/tech`);
-  console.log(`  Civic: http://localhost:${PORT}/civic`);
+  console.log(`Site running at ${PORT}`);
+  console.log(`  Tech:  ${PORT}/tech`);
+  console.log(`  Civic: ${PORT}/civic`);
 });
 
 server.on('error', (err) => {

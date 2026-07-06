@@ -3,12 +3,19 @@
   "preferredName": "Evangel",
   "role": "Software Engineer",
   "employer": "Marchex",
+  "degree": "BSc Software Engineering, First Class honours",
+  "school": "University of Portsmouth",
   "about": [
-    "Software engineer at Marchex, shipping production data visualisation for enterprise conversation analytics. I like owning a problem from first idea through to something deployed and reliable.",
-    "I am a builder. I take hard problems to production and care about software that works for real users. Outside my day job I co-founded and run a live SaaS platform, and I am building a browser-based 2D top-down survival shooter with a custom-built game engine. I also work on hardware projects.",
+    "Software engineer at Marchex, building call transcript and self-serve charting tools on Angular and C#/.NET for enterprise conversation analytics. I like owning a problem from first idea through to something deployed and reliable.",
+    "I recently graduated with First Class honours in Software Engineering from the University of Portsmouth. Outside my day job I co-founded Kevvlar, a live SaaS platform still serving users, and I am building Gloomhunt, a browser-based survival shooter with a custom game engine.",
     "I adapt quickly to new codebases and stacks, work well in teams with regular delivery cycles, and I am comfortable taking the lead when something needs to get shipped. I enjoy teaching programming and presenting technical ideas clearly."
   ],
   "products": [
+    {
+      "name": "Street Keeper",
+      "url": "https://street-keeper.onrender.com",
+      "description": "Final-year project: a Strava-integrated app that turns running into a street-coverage game. GPS matched to OpenStreetMap streets with maps, milestones, and route suggestions. Deployed live."
+    },
     {
       "name": "Kevvlar",
       "url": "https://kevvlar.com",
@@ -31,8 +38,8 @@
     "Practices": ["Vitest", "Figma", "Agile", "SAFe"]
   },
   "social": {
-    "github": null,
-    "linkedin": null,
+    "github": "https://github.com/devevangel",
+    "linkedin": "https://www.linkedin.com/in/devevangel/",
     "twitter": null
   }
 }
