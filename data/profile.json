@@ -6,9 +6,9 @@
   "degree": "BSc Software Engineering, First Class honours",
   "school": "University of Portsmouth",
   "about": [
-    "Software engineer at Marchex, building call transcript and self-serve charting tools on Angular and C#/.NET for enterprise conversation analytics. I like owning a problem from first idea through to something deployed and reliable.",
-    "I recently graduated with First Class honours in Software Engineering from the University of Portsmouth. Outside my day job I co-founded Kevvlar, a live SaaS platform still serving users, and I am building Gloomhunt, a browser-based survival shooter with a custom game engine.",
-    "I adapt quickly to new codebases and stacks, work well in teams with regular delivery cycles, and I am comfortable taking the lead when something needs to get shipped. I enjoy teaching programming and presenting technical ideas clearly."
+    "Software engineer at Marchex, building the data visualisation and self-serve analytics tools that enterprise sales and marketing teams use to understand millions of call conversations.",
+    "Graduated with First Class honours in Software Engineering from the University of Portsmouth. Previously shipped AI chatbot systems at Eli Lilly credited with over $4M in support savings. Co-founded Kevvlar, a SaaS platform still live after five years with ~150 users.",
+    "I pick up unfamiliar codebases fast and ship within the first sprint. I work well in teams with regular delivery cycles and I take ownership of problems from domain understanding through to production."
   ],
   "products": [
     {
