@@ -3,7 +3,7 @@
     {
       "id": "gloomhunt",
       "title": "Gloomhunt",
-      "summary": "Browser-based 2D top-down survival shooter with a custom-built game engine. Paid prize challenges, wallet and payments, and server-checked scores so every win is verified before payout. Node.js, PostgreSQL.",
+      "summary": "Browser-based survival shooter running on a custom game engine with deterministic replay, server-side score verification, and a double-entry financial ledger for real-money prize challenges. 50,000+ lines of application code, 230 automated tests. Node.js, PostgreSQL.",
       "status": "in-development",
       "tags": ["javascript", "canvas", "nodejs", "postgresql"],
       "links": {
@@ -14,7 +14,7 @@
     {
       "id": "kevvlar",
       "title": "Kevvlar",
-      "summary": "All-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021.",
+      "summary": "Project management SaaS with real-time collaboration via WebSockets, Stripe billing, Twilio video conferencing, and a unified permissions model. React, Node.js, MongoDB, Redis. ~150 users, live since 2021.",
       "status": "live",
       "tags": ["react", "nodejs", "mongodb", "stripe"],
       "links": {
@@ -25,7 +25,7 @@
     {
       "id": "street-keeper",
       "title": "Street Keeper",
-      "summary": "A web app that turns recreational running into a street-coverage game. Connect Strava, draw your area on the map, and track which streets you have run with milestones, route suggestions, and shareable progress cards. Where most running apps stop at pace or whole-city completion, Street Keeper lets runners own a neighbourhood and get feedback after every run. BSc final-year project, University of Portsmouth.",
+      "summary": "Strava-integrated running app that tracks street-level coverage using a custom GPS-to-street matching engine built on PostGIS spatial queries. Webhook pipeline for real-time activity ingestion, background job processing via pg-boss, on-demand city synchronisation with three-layer deduplication, and a clustering-based route suggestion engine. React, TypeScript, Express, PostgreSQL.",
       "status": "completed",
       "tags": ["typescript", "postgis", "react", "prisma"],
       "links": {
@@ -36,7 +36,7 @@
     {
       "id": "robot-dojo",
       "title": "Robot Dojo",
-      "summary": "Full-stack virtual pet application with custom persistence layer, mood-state engine, and REST API. Node.js and Express, deployed to production.",
+      "summary": "Full-stack web application with a custom-built database management system, a text processing engine for natural-language command parsing, and a global state architecture. Node.js, Express, REST API, deployed to production.",
       "status": "live",
       "tags": ["javascript", "nodejs", "express"],
       "links": {

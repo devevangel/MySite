@@ -14,17 +14,17 @@
     {
       "name": "Street Keeper",
       "url": "https://street-keeper.onrender.com",
-      "description": "Final-year project: a Strava-integrated app that turns running into a street-coverage game. GPS matched to OpenStreetMap streets with maps, milestones, and route suggestions. Deployed live."
+      "description": "Strava-integrated running app that tracks street-level coverage using GPS matched against OpenStreetMap via PostGIS spatial queries. Background job processing, webhook pipelines, and a custom suggestion engine. Deployed live."
     },
     {
       "name": "Kevvlar",
       "url": "https://kevvlar.com",
-      "description": "All-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021."
+      "description": "Project management SaaS with real-time chat, video meetings, file sharing, and kanban boards unified under a single permissions model. Built with React, Node.js, MongoDB, Redis, and Stripe. ~150 users, live since 2021."
     },
     {
       "name": "Gloomhunt",
       "url": "https://gloomhunt.onrender.com",
-      "description": "Browser-based 2D top-down survival shooter with a custom-built game engine. Players can enter paid prize challenges; the server checks every winning score before payout so results stay fair."
+      "description": "Browser-based survival shooter running on a custom game engine with deterministic replay, server-side score verification, and a double-entry financial ledger for real-money prize challenges. 50,000+ lines, 230 automated tests."
     }
   ],
   "email": "dev.evangel@gmail.com",

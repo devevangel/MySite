@@ -8,8 +8,8 @@
       "title": "Full-Stack Software Engineer",
       "org": "Marchex Inc.",
       "location": "Remote, USA",
-      "summary": "Full-stack engineer shipping data visualisation for Marchex, a conversation intelligence platform where enterprise marketing and sales teams analyse phone and SMS data. Angular and C#/.NET, millions of call records, sprint delivery with CI/CD.",
-      "homeSummary": "I ship data visualisation solutions that help enterprise clients turn call and conversation data into actionable insight. Built transcript and charting tools in Angular and C#/.NET so marketing and sales teams can analyse outcomes without a new engineering request every time.",
+      "summary": "Building data visualisation and reporting tools for Marchex, a conversation intelligence platform processing millions of call records for enterprise clients including General Motors.",
+      "homeSummary": "Building the reporting and analytics layer that lets enterprise marketing and sales teams explore call performance data, build custom visualisations, and identify trends across millions of conversations without engineering involvement.",
       "details": [
         "Built a call transcript viewer with synced audio so users can review conversations in one place",
         "Shipped self-serve charting on AG Grid so business users can build their own call analytics reports",
@@ -84,7 +84,7 @@
       "title": "Contract Game Developer",
       "org": "SgtWoofy",
       "location": "Remote, Australia",
-      "summary": "Remote contract work on a PHP-based game platform.",
+      "summary": "Contract role building an in-game commerce system with real-currency purchases, inventory management, and payment processing on a PHP game platform.",
       "details": [
         "Authored developer documentation for API endpoints, schemas, and auth flows",
         "Built in-game store with real-currency purchases, inventory, and payment API integration",
@@ -100,7 +100,7 @@
       "title": "Full-Stack Engineer",
       "org": "Weekend Social",
       "location": "Remote, UK",
-      "summary": "Startup full-stack role with short iteration cycles shipping to production.",
+      "summary": "Built user-facing features and an internal admin dashboard for a social platform startup, shipping directly to production on weekly cycles.",
       "details": [
         "Redesigned application UI from product design feedback with responsive layouts",
         "Built admin dashboard for user activity, engagement metrics, and content management",
@@ -118,8 +118,8 @@
       "title": "CTO & Software Engineer (Co-founder)",
       "org": "Kevvlar",
       "location": "Remote, UK",
-      "summary": "Co-founded Kevvlar, an all-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021.",
-      "homeSummary": "I co-founded Kevvlar, an all-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021.",
+      "summary": "Co-founded and built a project management SaaS from design through to production infrastructure. Real-time collaboration via WebSockets, Stripe billing, video conferencing, and a unified permissions model. ~150 users, live since 2021.",
+      "homeSummary": "Co-founded and built a project management SaaS from Figma designs to production infrastructure. Real-time collaboration via WebSockets, Stripe billing, video conferencing, and a unified permissions model. ~150 users, live since 2021.",
       "details": [
         "Unified workspace per project: meetings, live chat, file sharing, and kanban boards one click away",
         "Project-level permissions: add or remove a member once, access updates across all features",
