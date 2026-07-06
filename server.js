@@ -91,6 +91,11 @@ function renderPage(res, layout, template, data) {
   });
 }
 
+// ── Health (Render / uptime checks) ────────────────────────────
+app.get('/health', (_req, res) => {
+  res.status(200).json({ ok: true });
+});
+
 // ── Root redirect ──────────────────────────────────────────────
 app.get('/', (_req, res) => res.redirect('/tech'));
 
@@ -210,10 +215,10 @@ app.use((_req, res) => {
   renderPage(res, 'tech/layout', '404', locals(_req, { pageTitle: 'Not found' }));
 });
 
-const server = app.listen(PORT, () => {
-  console.log(`Site running at ${PORT}`);
-  console.log(`  Tech:  ${PORT}/tech`);
-  console.log(`  Civic: ${PORT}/civic`);
+const server = app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Site running on port ${PORT}`);
+  console.log(`  Tech:  /tech`);
+  console.log(`  Civic: /civic`);
 });
 
 server.on('error', (err) => {
