@@ -1,20 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const entries = document.querySelectorAll('.timeline-entry');
-  if (!entries.length) return;
+  const groups = document.querySelectorAll('.timeline-year-group');
+  if (!groups.length) return;
 
-  if (entries[0]) entries[0].classList.add('is-active');
+  groups.forEach((group) => {
+    const btn = group.querySelector('.timeline-year-header');
+    const entries = group.querySelector('.timeline-year-entries');
+    if (!btn || !entries) return;
 
-  const observer = new IntersectionObserver(
-    (observed) => {
-      observed.forEach((item) => {
-        if (item.isIntersecting) {
-          entries.forEach((el) => el.classList.remove('is-active'));
-          item.target.classList.add('is-active');
-        }
-      });
-    },
-    { rootMargin: '-30% 0px -60% 0px', threshold: 0 }
-  );
-
-  entries.forEach((entry) => observer.observe(entry));
+    btn.addEventListener('click', () => {
+      const isOpen = group.classList.contains('is-open');
+      if (isOpen) {
+        entries.hidden = true;
+        group.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        entries.hidden = false;
+        group.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 });

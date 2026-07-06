@@ -1,58 +1,92 @@
 <div class="page-header">
   <h1>Career Timeline</h1>
-  <p>A quick overview of where I have been and what I was building. See work experience and projects for the full detail.</p>
+  <p>Where I have been and what I was building.</p>
+  <div class="timeline-legend">
+    <span class="timeline-legend-item"><span class="timeline-legend-dot timeline-legend-dot--role"></span>Roles</span>
+    <span class="timeline-legend-item"><span class="timeline-legend-dot timeline-legend-dot--project"></span>Projects</span>
+    <span class="timeline-legend-item"><span class="timeline-legend-dot timeline-legend-dot--education"></span>Education</span>
+  </div>
 </div>
 
-<div class="timeline timeline--page" role="list">
-  <% career.entries.forEach(function(entry, i) {
+<%
+  const currentYear = new Date().getFullYear().toString();
+  const typeOrder = { role: 0, project: 1, education: 2 };
+  const yearGroups = {};
+  career.entries.forEach(function(entry) {
     const isCurrent = !entry.end && (entry.type === 'role' || entry.type === 'project');
-    const isFirst = i === 0;
-    const dateLabel = isCurrent
-      ? 'Present'
-      : (entry.type === 'education' && entry.end ? formatYearMonth(entry.end) : formatYearMonth(entry.start));
+    const year = isCurrent ? currentYear : (entry.end ? entry.end.slice(0, 4) : entry.start.slice(0, 4));
+    if (!yearGroups[year]) yearGroups[year] = [];
+    yearGroups[year].push(entry);
+  });
+  Object.keys(yearGroups).forEach(function(year) {
+    yearGroups[year].sort(function(a, b) {
+      const ta = typeOrder[a.type] || 9;
+      const tb = typeOrder[b.type] || 9;
+      if (ta !== tb) return ta - tb;
+      return b.start.localeCompare(a.start);
+    });
+  });
+  const sortedYears = Object.keys(yearGroups).sort((a, b) => b.localeCompare(a));
+  let entryIndex = 0;
+%>
+
+<div class="timeline timeline--split" role="list">
+  <% sortedYears.forEach(function(year, gi) {
+    const isCurrentYear = year === currentYear;
+    const entries = yearGroups[year];
   %>
-    <article
-      class="timeline-entry<%= isFirst ? ' is-active' : '' %><%= isCurrent ? ' is-current' : '' %>"
-      role="listitem"
-      data-year="<%= entry.start.slice(0, 4) %>"
-      style="--entry-index: <%= i %>"
-    >
-      <div class="timeline-marker">
-        <span class="timeline-dot" aria-hidden="true"></span>
-      </div>
-      <div class="timeline-card">
-        <div class="timeline-card-compact">
-          <time class="timeline-card-dates" datetime="<%= entry.start %>/<%= entry.end || '' %>"><%= dateLabel %></time>
-          <div class="timeline-card-main">
-            <div class="timeline-card-topline">
-              <span class="timeline-type timeline-type--<%= entry.type %>"><%= entry.type %></span>
-              <% if (isCurrent) { %><span class="timeline-now">Now</span><% } %>
+    <div class="timeline-year-group<%= isCurrentYear ? ' is-open' : '' %>" data-year="<%= year %>" style="--group-index: <%= gi %>">
+      <button class="timeline-year-header" type="button" aria-expanded="<%= isCurrentYear %>">
+        <span class="timeline-year-label"><%= year %></span>
+      </button>
+      <div class="timeline-year-entries"<%= isCurrentYear ? '' : ' hidden' %>>
+        <% entries.forEach(function(entry) {
+          const isCurrent = !entry.end && (entry.type === 'role' || entry.type === 'project');
+          const side = (entry.type === 'project') ? 'right' : 'left';
+          const startLabel = formatYearMonth(entry.start);
+          const endLabel = entry.end ? formatYearMonth(entry.end) : 'Present';
+          const dateRange = startLabel + ' – ' + endLabel;
+        %>
+          <article
+            class="timeline-entry timeline-entry--<%= side %><%= isCurrent ? ' is-current' : '' %>"
+            role="listitem"
+            style="--entry-index: <%= entryIndex++ %>"
+          >
+            <div class="timeline-dot-center">
+              <span class="timeline-dot timeline-dot--<%= entry.type %>"></span>
             </div>
-            <h3 class="timeline-card-title"><%= entry.title %></h3>
-            <p class="timeline-card-org">
-              <%= entry.org %><% if (entry.location) { %> · <%= entry.location %><% } %>
-            </p>
-            <% if (entry.highlights && entry.highlights.length) { %>
-              <ul class="timeline-highlights">
-                <% entry.highlights.forEach(function(line) { %>
-                  <li><%= line %></li>
-                <% }); %>
-              </ul>
-            <% } %>
-            <% if (entry.links && entry.links.length) { %>
-              <div class="timeline-links">
-                <% entry.links.forEach(function(link) { %>
-                  <a
-                    href="<%= link.href %>"
-                    class="timeline-link"
-                    <% if (link.href.startsWith('http')) { %> target="_blank" rel="noopener"<% } %>
-                  ><%= link.label %></a>
-                <% }); %>
+            <div class="timeline-card">
+              <time class="timeline-card-dates" datetime="<%= entry.start %>/<%= entry.end || '' %>"><%= dateRange %></time>
+              <div class="timeline-card-topline">
+                <span class="timeline-type timeline-type--<%= entry.type %>"><%= entry.type %></span>
+                <% if (isCurrent) { %><span class="timeline-now">Now</span><% } %>
               </div>
-            <% } %>
-          </div>
-        </div>
+              <h3 class="timeline-card-title"><%= entry.title %></h3>
+              <p class="timeline-card-org">
+                <%= entry.org %><% if (entry.location) { %> · <%= entry.location %><% } %>
+              </p>
+              <% if (entry.highlights && entry.highlights.length) { %>
+                <ul class="timeline-highlights">
+                  <% entry.highlights.forEach(function(line) { %>
+                    <li><%= line %></li>
+                  <% }); %>
+                </ul>
+              <% } %>
+              <% if (entry.links && entry.links.length) { %>
+                <div class="timeline-links">
+                  <% entry.links.forEach(function(link) { %>
+                    <a
+                      href="<%= link.href %>"
+                      class="timeline-link"
+                      <% if (link.href.startsWith('http')) { %> target="_blank" rel="noopener"<% } %>
+                    ><%= link.label %></a>
+                  <% }); %>
+                </div>
+              <% } %>
+            </div>
+          </article>
+        <% }); %>
       </div>
-    </article>
+    </div>
   <% }); %>
 </div>

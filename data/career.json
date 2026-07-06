@@ -14,8 +14,8 @@
       "org": "Marchex Inc.",
       "location": "Remote, USA",
       "highlights": [
-        "Built a call transcript viewer with synced audio and self-serve charting on AG Grid.",
-        "Shipping data visualisation features and tools that help enterprise clients analyse call and conversation outcomes and drive informed decisions."
+        "Building reporting and analytics tools for enterprise conversation intelligence.",
+        "Processing millions of call records for clients including General Motors."
       ],
       "links": [
         { "label": "Work experience →", "href": "/tech/experience" }
@@ -40,10 +40,10 @@
       "end": "2026-05",
       "type": "project",
       "title": "Street Keeper",
-      "org": "Final year project · University of Portsmouth",
+      "org": "University of Portsmouth",
       "highlights": [
-        "Strava-integrated street-coverage game for runners.",
-        "Deployed live with PostGIS and OpenStreetMap matching."
+        "GPS-to-street matching engine built on PostGIS spatial queries.",
+        "Webhook pipeline, background job processing, on-demand city sync."
       ],
       "links": [
         { "label": "Project details →", "href": "/tech/projects#street-keeper" }
@@ -57,8 +57,8 @@
       "title": "Gloomhunt",
       "org": "Personal",
       "highlights": [
-        "Custom browser game engine with paid prize challenges.",
-        "Server-verified scores before any payout."
+        "Custom game engine with deterministic replay and server-side score verification.",
+        "Double-entry financial ledger for real-money payouts. 50,000+ lines, 230 tests."
       ],
       "links": [
         { "label": "Project details →", "href": "/tech/projects#gloomhunt" }
@@ -127,10 +127,10 @@
       "end": "2022-05",
       "type": "project",
       "title": "Robot Dojo",
-      "org": "University coursework",
+      "org": "Personal",
       "highlights": [
-        "Virtual pet with custom JSON database and mood engine.",
-        "Still deployed and running live."
+        "Custom database management system, text processing engine, global state architecture.",
+        "Deployed to production and still running live."
       ],
       "links": [
         { "label": "Project details →", "href": "/tech/projects#robot-dojo" }
@@ -157,8 +157,8 @@
       "title": "Kevvlar",
       "org": "Co-founder",
       "highlights": [
-        "All-in-one project management SaaS: meetings, chat, files, kanban.",
-        "~150 users; live since 2021."
+        "Real-time collaboration via WebSockets, Stripe billing, Twilio video.",
+        "~150 users, live since 2021. React, Node.js, MongoDB, Redis."
       ],
       "links": [
         { "label": "Project details →", "href": "/tech/projects#kevvlar" }
