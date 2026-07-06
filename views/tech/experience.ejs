@@ -1,0 +1,35 @@
+<div class="page-header">
+  <h1>Work Experience</h1>
+</div>
+
+<div class="experience-list experience-list--page">
+  <% experience.forEach(function(job) { %>
+    <article class="experience-card">
+      <div class="experience-card-top">
+        <h2 class="experience-role"><%= job.title %></h2>
+        <span class="experience-period">
+          <%= formatYearMonth(job.start) %><% if (job.end) { %> – <%= formatYearMonth(job.end) %><% } else { %> – Present<% } %>
+        </span>
+      </div>
+      <p class="experience-company"><%= job.org %><% if (job.location) { %> · <%= job.location %><% } %></p>
+      <p class="experience-summary"><%= job.summary %></p>
+      <% if (job.details && job.details.length) { %>
+        <ul class="experience-bullets">
+          <% job.details.forEach(function(detail, index) { %>
+            <li<% if (index >= 3) { %> class="experience-bullet--extra" hidden<% } %>><%= detail %></li>
+          <% }); %>
+        </ul>
+        <% if (job.details.length > 3) { %>
+          <button type="button" class="experience-more-btn" aria-expanded="false">See more</button>
+        <% } %>
+      <% } %>
+      <% if (job.links && job.links.length) { %>
+        <div class="experience-links">
+          <% job.links.forEach(function(link) { %>
+            <a href="<%= link.href %>" class="experience-link"<% if (link.href.startsWith('http')) { %> target="_blank" rel="noopener"<% } %>><%= link.label %></a>
+          <% }); %>
+        </div>
+      <% } %>
+    </article>
+  <% }); %>
+</div>

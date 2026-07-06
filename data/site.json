@@ -1,0 +1,19 @@
+{
+  "tech": {
+    "title": "Evangel Iheukwumere",
+    "subtitle": "Software & systems engineer",
+    "blogSectionTitle": "Blog",
+    "blogSectionDesc": "What I learned building real software: problems, challenges, and what worked."
+  },
+  "civic": {
+    "title": "Civic Writing",
+    "subtitle": "Governance, reform, and what Nigeria owes its people",
+    "disclaimer": "Personal analysis. All claims are sourced. Views are my own.",
+    "focusAreas": [
+      "Protecting citizens",
+      "Investing in people over patronage",
+      "Evidence-based reform",
+      "Accountable governance"
+    ]
+  }
+}

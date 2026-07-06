@@ -1,0 +1,140 @@
+{
+  "homeFeaturedIds": ["marchex", "eli-lilly", "kevvlar"],
+  "entries": [
+    {
+      "id": "marchex",
+      "start": "2025-06",
+      "end": null,
+      "title": "Full-Stack Software Engineer",
+      "org": "Marchex Inc.",
+      "location": "Remote, USA",
+      "summary": "Full-stack engineer shipping data visualisation for Marchex, a conversation intelligence platform where enterprise marketing and sales teams analyse phone and SMS data. Angular and C#/.NET, millions of call records, sprint delivery with CI/CD.",
+      "homeSummary": "I ship data visualisation solutions that help enterprise clients turn call and conversation data into actionable insight. Built transcript and charting tools in Angular and C#/.NET so marketing and sales teams can analyse outcomes without a new engineering request every time.",
+      "details": [
+        "Built a call transcript viewer with synced audio so users can review conversations in one place",
+        "Shipped self-serve charting on AG Grid so business users can build their own call analytics reports",
+        "Delivered 35+ features and 15 bug fixes to production through sprint-based CI/CD",
+        "Helped deploy and maintain a backend audio service that delivers structured transcripts to the frontend",
+        "Full-stack work on Angular and C#/.NET handling millions of call records for clients including General Motors"
+      ],
+      "tags": ["angular", "typescript", "csharp", "ag-grid"],
+      "links": []
+    },
+    {
+      "id": "eli-lilly",
+      "start": "2024-07",
+      "end": "2025-07",
+      "title": "Software Engineer",
+      "org": "Eli Lilly and Company",
+      "location": "United Kingdom",
+      "summary": "Shipped AI chatbot systems in regulated pharma that reduced pressure on call centre reps. Programme credited with over $4M in estimated out-of-hours support savings; built React testing tools adopted team-wide that cut bot validation by more than a day per cycle.",
+      "homeSummary": "I shipped AI chatbot systems that reduced pressure on call centre reps in regulated pharma. Programme credited with over $4M in estimated out-of-hours support savings; built React testing tools that cut bot validation cycles by more than a day.",
+      "details": [
+        "95% intent classification accuracy on Azure AI Language Studio (above 92% production threshold)",
+        "Chatbot systems credited with over $4M in estimated out-of-hours support savings",
+        "Built React UAT platform that cut testing time by more than one full day per cycle",
+        "Integrated Cortex LLM gateway for dynamic dialogue in regulated flows",
+        "Built Amazon Bedrock drug knowledge agent with AWS Lambda task agents",
+        "Runner-up in internal innovation challenge with custom chatbot framework",
+        "Earned SAFe Agile Practitioner certification"
+      ],
+      "tags": ["react", "azure", "aws", "ai"],
+      "links": [
+        { "label": "Chatbot testing", "href": "/tech/blog/when-manual-testing-blocks-ai-releases" },
+        { "label": "Intent accuracy", "href": "/tech/blog/intent-accuracy-production-gate" }
+      ]
+    },
+    {
+      "id": "portsmouth-it",
+      "start": "2023-09",
+      "end": "2024-06",
+      "title": "IT Help Adviser",
+      "org": "University of Portsmouth",
+      "location": "United Kingdom",
+      "summary": "Provided IT support for students and staff, resolving software, login, and network issues and onboarding new users. Documented recurring fixes and ran knowledge-sharing sessions to improve team response times.",
+      "homeSummary": "I provided IT support for students and staff, resolving software, login, and network issues and onboarding new users quickly. Documented recurring fixes and ran knowledge-sharing sessions to help the team handle common problems faster.",
+      "details": [
+        "Troubleshot network connectivity, software installs, and account access issues",
+        "Guided new students through onboarding, email setup, and VPN access",
+        "Documented common issues and ran knowledge-sharing sessions for other advisers"
+      ],
+      "tags": ["it-support", "documentation"],
+      "links": []
+    },
+    {
+      "id": "bay-house",
+      "start": "2023-06",
+      "end": "2023-07",
+      "title": "Intern Computing Teacher",
+      "org": "Bay House School & Sixth Form",
+      "location": "United Kingdom",
+      "summary": "Supported computing lessons across Key Stage 3 and 4.",
+      "details": [
+        "Assisted teachers delivering programming, data representation, and networking topics",
+        "One-on-one support during practical coding sessions",
+        "UK GDPR and UK Safeguarding Training (TSAT) certifications obtained"
+      ],
+      "tags": ["teaching", "education"],
+      "links": []
+    },
+    {
+      "id": "sgtwoofy",
+      "start": "2022-03",
+      "end": "2022-08",
+      "title": "Contract Game Developer",
+      "org": "SgtWoofy",
+      "location": "Remote, Australia",
+      "summary": "Remote contract work on a PHP-based game platform.",
+      "details": [
+        "Authored developer documentation for API endpoints, schemas, and auth flows",
+        "Built in-game store with real-currency purchases, inventory, and payment API integration",
+        "Worked within existing game engine and PHP backend architecture"
+      ],
+      "tags": ["php", "game-dev", "api"],
+      "links": []
+    },
+    {
+      "id": "weekend-social",
+      "start": "2022-06",
+      "end": "2022-09",
+      "title": "Full-Stack Engineer",
+      "org": "Weekend Social",
+      "location": "Remote, UK",
+      "summary": "Startup full-stack role with short iteration cycles shipping to production.",
+      "details": [
+        "Redesigned application UI from product design feedback with responsive layouts",
+        "Built admin dashboard for user activity, engagement metrics, and content management",
+        "Shipped features directly to production in a fast-moving startup environment"
+      ],
+      "tags": ["javascript", "react", "rest-apis"],
+      "links": [
+        { "label": "Startup shipping", "href": "/tech/blog/shipping-weekly-in-a-startup" }
+      ]
+    },
+    {
+      "id": "kevvlar",
+      "start": "2021-06",
+      "end": "2023-02",
+      "title": "CTO & Software Engineer (Co-founder)",
+      "org": "Kevvlar",
+      "location": "Remote, UK",
+      "summary": "Co-founded Kevvlar, an all-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021.",
+      "homeSummary": "I co-founded Kevvlar, an all-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021.",
+      "details": [
+        "Unified workspace per project: meetings, live chat, file sharing, and kanban boards one click away",
+        "Project-level permissions: add or remove a member once, access updates across all features",
+        "Built the full app from Figma designs and handled roadmap and go-to-market",
+        "Grew to ~150 users and 200+ workspaces; launched on Product Hunt",
+        "React + Redux frontend, Node/Express + MongoDB + Redis backend",
+        "Twilio video, WebSocket live chat, Stripe subscriptions and webhooks",
+        "Deployment and monitoring on AWS and Firebase"
+      ],
+      "tags": ["react", "nodejs", "stripe", "saas"],
+      "links": [
+        { "label": "kevvlar.com", "href": "https://kevvlar.com" },
+        { "label": "Live kanban", "href": "/tech/blog/live-kanban-websockets" },
+        { "label": "In-app video", "href": "/tech/blog/video-calls-in-an-iframe" }
+      ]
+    }
+  ]
+}

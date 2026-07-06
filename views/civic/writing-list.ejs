@@ -1,0 +1,29 @@
+<div class="page-header civic-page-header">
+  <h1>Essays</h1>
+  <p>Analysis on Nigerian governance — every claim sourced.</p>
+</div>
+
+<% if (posts.length === 0) { %>
+  <p class="empty-state">No essays published yet.</p>
+<% } else { %>
+  <div class="civic-post-list">
+    <% posts.forEach(function(post) { %>
+      <a href="/civic/writing/<%= post.slug %>" class="civic-post-card">
+        <div class="civic-post-card-meta">
+          <span class="sourced-badge">Sourced</span>
+          <span><%= post.readMinutes %> min read</span>
+          <span><%= formatDate(post.published) %></span>
+        </div>
+        <h2 class="civic-post-card-title"><%= post.title %></h2>
+        <p class="civic-post-card-summary"><%= post.summary %></p>
+        <% if (post.tags && post.tags.length) { %>
+          <div class="post-tags">
+            <% post.tags.forEach(function(tag) { %>
+              <span class="tag tag--civic"><%= tag %></span>
+            <% }); %>
+          </div>
+        <% } %>
+      </a>
+    <% }); %>
+  </div>
+<% } %>

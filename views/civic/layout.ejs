@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %> · Civic Writing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/civic.css">
+</head>
+<body class="civic-body">
+  <header class="civic-header">
+    <nav class="civic-nav">
+      <a href="/civic" class="civic-logo">Civic Writing</a>
+      <div class="civic-nav-links">
+        <a href="/civic/writing">Essays</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="civic-main">
+    <%- body %>
+  </main>
+
+  <footer class="civic-footer">
+    <div class="civic-footer-inner">
+      <p class="civic-disclaimer"><%= site.civic.disclaimer %></p>
+      <a href="/tech" class="civic-footer-portal">Tech portfolio →</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "evangel-site",
+  "version": "1.0.0",
+  "description": "Personal site — tech portfolio and civic writing",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Evangel Chidiebube Iheuwkumere",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.6",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "projects": [
+    {
+      "id": "gloomhunt",
+      "title": "Gloomhunt",
+      "summary": "Browser-based 2D top-down survival shooter with a custom-built game engine. Paid prize challenges, wallet and payments, and server-checked scores so every win is verified before payout. Node.js, PostgreSQL.",
+      "status": "in-development",
+      "tags": ["javascript", "canvas", "nodejs", "postgresql"],
+      "links": {
+        "live": "https://gloomhunt.onrender.com",
+        "blog": "/tech/blog/canvas-game-feel"
+      }
+    },
+    {
+      "id": "kevvlar",
+      "title": "Kevvlar",
+      "summary": "All-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021.",
+      "status": "live",
+      "tags": ["react", "nodejs", "mongodb", "stripe"],
+      "links": {
+        "live": "https://kevvlar.com",
+        "blog": "/tech/blog/live-kanban-websockets"
+      }
+    },
+    {
+      "id": "street-keeper",
+      "title": "Street Keeper",
+      "summary": "A web app that turns recreational running into a street-coverage game. Connect Strava, draw your area on the map, and track which streets you have run with milestones, route suggestions, and shareable progress cards. Where most running apps stop at pace or whole-city completion, Street Keeper lets runners own a neighbourhood and get feedback after every run. BSc final-year project, University of Portsmouth.",
+      "status": "completed",
+      "tags": ["typescript", "postgis", "react", "prisma"],
+      "links": {
+        "live": "https://street-keeper.onrender.com",
+        "blog": "/tech/blog/gps-street-matching"
+      }
+    },
+    {
+      "id": "robot-dojo",
+      "title": "Robot Dojo",
+      "summary": "Full-stack virtual pet application with custom persistence layer, mood-state engine, and REST API. Node.js and Express, deployed to production.",
+      "status": "live",
+      "tags": ["javascript", "nodejs", "express"],
+      "links": {
+        "live": "https://my-virtual-pet.onrender.com"
+      }
+    }
+  ]
+}

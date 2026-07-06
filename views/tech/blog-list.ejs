@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h1>Blog</h1>
+  <p>What I learned building real software: problems I hit, what I tried, and what actually worked. Written for anyone facing something similar.</p>
+</div>
+
+<% if (posts.length === 0) { %>
+  <p class="empty-state">No posts yet.</p>
+<% } else { %>
+  <div class="blog-list">
+    <% posts.forEach(function(post) { %>
+      <a href="/tech/blog/<%= post.slug %>" class="blog-list-item">
+        <div class="blog-list-meta">
+          <% if (post.published) { %><span><%= formatDate(post.published) %></span><% } %>
+          <span><%= post.readMinutes %> min read</span>
+        </div>
+        <h2 class="blog-list-title"><%= post.title %></h2>
+        <% if (post.tags && post.tags.length) { %>
+          <div class="blog-tags" aria-label="Topics">
+            <% post.tags.forEach(function(tag) { %>
+              <span class="blog-tag"><%= tag %></span>
+            <% }); %>
+          </div>
+        <% } %>
+        <p class="blog-list-summary"><%= post.summary %></p>
+      </a>
+    <% }); %>
+  </div>
+<% } %>

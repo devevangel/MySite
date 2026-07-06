@@ -1,0 +1,43 @@
+<article class="post-article civic-post-article">
+  <header class="post-header civic-post-header">
+    <a href="/civic/writing" class="post-back">← Essays</a>
+    <div class="post-meta">
+      <span class="sourced-badge">Sourced</span>
+      <span><%= post.readMinutes %> min read</span>
+      <span><%= formatDate(post.published) %></span>
+    </div>
+    <h1 class="post-title civic-post-title"><%= post.title %></h1>
+    <% if (post.summary) { %><p class="post-summary"><%= post.summary %></p><% } %>
+    <% if (post.tags && post.tags.length) { %>
+      <div class="post-tags">
+        <% post.tags.forEach(function(tag) { %>
+          <span class="tag tag--civic"><%= tag %></span>
+        <% }); %>
+      </div>
+    <% } %>
+  </header>
+
+  <div class="post-content prose-civic">
+    <%- post.html %>
+  </div>
+
+  <% if (post.sources && post.sources.length) { %>
+  <section class="references-section" aria-labelledby="references-heading">
+    <h2 id="references-heading">References</h2>
+    <ol class="references-list">
+      <% post.sources.forEach(function(source) { %>
+        <li id="ref-<%= source.id %>" class="reference-item">
+          <span class="reference-marker">[<%= source.id %>]</span>
+          <% if (source.author) { %><span class="reference-author"><%= source.author %></span> — <% } %>
+          <em class="reference-title"><%= source.title %></em>
+          <% if (source.date) { %><span class="reference-date">(<%= source.date %>)</span><% } %>
+          <span class="reference-accessed">accessed <%= source.accessed %></span>
+          <% if (source.url) { %>
+            <a href="<%= source.url %>" class="reference-url" target="_blank" rel="noopener"><%= source.url %></a>
+          <% } %>
+        </li>
+      <% }); %>
+    </ol>
+  </section>
+  <% } %>
+</article>

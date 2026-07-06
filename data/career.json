@@ -1,0 +1,195 @@
+{
+  "current": {
+    "role": "Software Engineer",
+    "org": "Marchex",
+    "since": "2025"
+  },
+  "entries": [
+    {
+      "id": "marchex",
+      "start": "2025-06",
+      "end": null,
+      "type": "role",
+      "title": "Full-Stack Software Engineer",
+      "org": "Marchex Inc.",
+      "location": "Remote, USA",
+      "highlights": [
+        "Built a call transcript viewer with synced audio and self-serve charting on AG Grid.",
+        "Shipping data visualisation features and tools that help enterprise clients analyse call and conversation outcomes and drive informed decisions."
+      ],
+      "links": [
+        { "label": "Work experience →", "href": "/tech/experience" }
+      ]
+    },
+    {
+      "id": "hardware",
+      "start": "2026-01",
+      "end": "2026-04",
+      "type": "project",
+      "title": "UAV & Rocket Stabilisation",
+      "org": "Personal",
+      "highlights": [
+        "Fixed-wing UAV design in Fusion 360.",
+        "IMU stabiliser with real-time PID loops for model rockets."
+      ],
+      "links": []
+    },
+    {
+      "id": "street-keeper",
+      "start": "2025-10",
+      "end": "2026-05",
+      "type": "project",
+      "title": "Street Keeper",
+      "org": "Final year project · University of Portsmouth",
+      "highlights": [
+        "Strava-integrated street-coverage game for runners.",
+        "Deployed live with PostGIS and OpenStreetMap matching."
+      ],
+      "links": [
+        { "label": "Project details →", "href": "/tech/projects#street-keeper" }
+      ]
+    },
+    {
+      "id": "gloomhunt",
+      "start": "2024-06",
+      "end": null,
+      "type": "project",
+      "title": "Gloomhunt",
+      "org": "Personal",
+      "highlights": [
+        "Custom browser game engine with paid prize challenges.",
+        "Server-verified scores before any payout."
+      ],
+      "links": [
+        { "label": "Project details →", "href": "/tech/projects#gloomhunt" }
+      ]
+    },
+    {
+      "id": "eli-lilly",
+      "start": "2024-07",
+      "end": "2025-07",
+      "type": "role",
+      "title": "Software Engineer",
+      "org": "Eli Lilly and Company",
+      "location": "United Kingdom",
+      "highlights": [
+        "Shipped AI chatbots in regulated pharma; 95% intent accuracy.",
+        "React UAT tooling adopted team-wide."
+      ],
+      "links": [
+        { "label": "Work experience →", "href": "/tech/experience" }
+      ]
+    },
+    {
+      "id": "portsmouth-it",
+      "start": "2023-09",
+      "end": "2024-06",
+      "type": "role",
+      "title": "IT Help Adviser",
+      "org": "University of Portsmouth",
+      "location": "United Kingdom",
+      "highlights": [
+        "Front-line support for students and staff.",
+        "Documented fixes and ran team knowledge-sharing sessions."
+      ],
+      "links": []
+    },
+    {
+      "id": "bay-house",
+      "start": "2023-06",
+      "end": "2023-07",
+      "type": "role",
+      "title": "Intern Computing Teacher",
+      "org": "Bay House School & Sixth Form",
+      "location": "United Kingdom",
+      "highlights": [
+        "Supported KS3 and KS4 computing lessons and practical coding sessions."
+      ],
+      "links": []
+    },
+    {
+      "id": "sgtwoofy",
+      "start": "2022-03",
+      "end": "2022-08",
+      "type": "role",
+      "title": "Contract Game Developer",
+      "org": "SgtWoofy",
+      "location": "Remote, Australia",
+      "highlights": [
+        "In-game store with real-currency purchases and payment APIs.",
+        "API documentation for the game platform."
+      ],
+      "links": []
+    },
+    {
+      "id": "robot-dojo",
+      "start": "2021-09",
+      "end": "2022-05",
+      "type": "project",
+      "title": "Robot Dojo",
+      "org": "Year 1 coursework · University of Portsmouth",
+      "highlights": [
+        "Virtual pet with custom JSON database and mood engine.",
+        "Still deployed and running live."
+      ],
+      "links": [
+        { "label": "Project details →", "href": "/tech/projects#robot-dojo" }
+      ]
+    },
+    {
+      "id": "weekend-social",
+      "start": "2022-06",
+      "end": "2022-09",
+      "type": "role",
+      "title": "Full-Stack Engineer",
+      "org": "Weekend Social",
+      "location": "Remote, UK",
+      "highlights": [
+        "UI redesign and admin dashboard in a weekly-shipping startup."
+      ],
+      "links": []
+    },
+    {
+      "id": "kevvlar",
+      "start": "2021-06",
+      "end": "2023-02",
+      "type": "project",
+      "title": "Kevvlar",
+      "org": "Co-founder",
+      "highlights": [
+        "All-in-one project management SaaS: meetings, chat, files, kanban.",
+        "~150 users; live since 2021."
+      ],
+      "links": [
+        { "label": "Project details →", "href": "/tech/projects#kevvlar" }
+      ]
+    },
+    {
+      "id": "university",
+      "start": "2022-09",
+      "end": "2026-07",
+      "type": "education",
+      "title": "BSc Software Engineering",
+      "org": "University of Portsmouth",
+      "location": "United Kingdom",
+      "highlights": [
+        "Industrial placement at Eli Lilly; final-year project Street Keeper.",
+        "First Class honours. Graduated July 2026."
+      ],
+      "links": []
+    },
+    {
+      "id": "fut-minna",
+      "start": "2018-01",
+      "end": "2022-12",
+      "type": "education",
+      "title": "BEng Chemical Engineering",
+      "org": "Federal University of Technology, Minna",
+      "location": "Niger State, Nigeria",
+      "highlights": [
+        "Engineering degree before moving into software in the UK."
+      ],
+      "links": []
+    }
+  ]
+}

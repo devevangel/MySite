@@ -1,0 +1,80 @@
+<section class="home-hero">
+  <p class="home-eyebrow"><%= profile.role %> at <%= profile.employer %></p>
+  <h1 class="home-title"><%= profile.name %></h1>
+  <% profile.about.forEach(function(paragraph) { %>
+    <p class="home-about-text"><%= paragraph %></p>
+  <% }); %>
+  <% if (profile.email) { %>
+    <a href="mailto:<%= profile.email %>" class="home-cta"><%= profile.email %></a>
+  <% } %>
+</section>
+
+<section class="home-section home-skills">
+  <h2 class="home-section-title">Skills</h2>
+  <div class="skills-list skills-list--home">
+    <% Object.entries(profile.skills).forEach(function(entry) { %>
+      <div class="skill-row">
+        <p class="skill-row-label"><%= entry[0] %></p>
+        <div class="skill-tags">
+          <% entry[1].forEach(function(item) { %>
+            <span class="skill-tag"><%= item %></span>
+          <% }); %>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</section>
+
+<section class="home-section home-experience">
+  <div class="home-section-header">
+    <h2 class="home-section-title">Work Experience</h2>
+    <a href="/tech/experience" class="home-section-more">View all roles →</a>
+  </div>
+  <div class="experience-list">
+    <% recentExperience.forEach(function(job) { %>
+      <article class="experience-card">
+        <div class="experience-card-top">
+          <h3 class="experience-role"><%= job.title %></h3>
+          <span class="experience-period">
+            <%= formatYearMonth(job.start) %><% if (job.end) { %> – <%= formatYearMonth(job.end) %><% } else { %> – Present<% } %>
+          </span>
+        </div>
+        <p class="experience-company"><%= job.org %><% if (job.location) { %> · <%= job.location %><% } %></p>
+        <p class="experience-summary"><%= job.homeSummary || job.summary %></p>
+        <% if (job.links && job.links.length) { %>
+          <div class="experience-links">
+            <% job.links.forEach(function(link) { %>
+              <a href="<%= link.href %>" class="experience-link"<% if (link.href.startsWith('http')) { %> target="_blank" rel="noopener"<% } %>><%= link.label %></a>
+            <% }); %>
+          </div>
+        <% } %>
+      </article>
+    <% }); %>
+  </div>
+</section>
+
+<section class="home-section home-products">
+  <div class="home-section-header">
+    <h2 class="home-section-title">Projects</h2>
+    <a href="/tech/projects" class="home-section-more">View all projects →</a>
+  </div>
+  <div class="home-product-list">
+    <% profile.products.forEach(function(product) { %>
+      <article class="home-product-card">
+        <a href="<%= product.url %>" class="home-product-name" target="_blank" rel="noopener"><%= product.name %></a>
+        <p class="home-product-desc"><%= product.description %></p>
+        <a href="<%= product.url %>" class="experience-link" target="_blank" rel="noopener">Visit live →</a>
+      </article>
+    <% }); %>
+  </div>
+</section>
+
+<nav class="home-section home-explore" aria-label="More on this site">
+  <p class="home-section-title">More</p>
+  <div class="home-explore-links">
+    <a href="/tech/experience" class="home-explore-link">Work Experience</a>
+    <a href="/tech/projects" class="home-explore-link">Projects</a>
+    <a href="/tech/blog" class="home-explore-link">Blog</a>
+    <a href="/tech/timeline" class="home-explore-link">Career Timeline</a>
+  </div>
+</nav>

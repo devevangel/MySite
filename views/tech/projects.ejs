@@ -1,0 +1,27 @@
+<div class="page-header">
+  <h1>Projects</h1>
+  <p>Production software across web applications, payments, geospatial analytics, and game platforms.</p>
+</div>
+
+<div class="projects-list projects-list--page">
+  <% projects.forEach(function(project) { %>
+    <article class="project-card" id="<%= project.id %>">
+      <div class="project-card-top">
+        <h2 class="project-card-title"><%= project.title %></h2>
+        <span class="project-status project-status--<%= project.status.replace(/\s+/g, '-') %>"><%= project.status %></span>
+      </div>
+      <p class="project-card-summary"><%= project.summary %></p>
+      <% if (project.tags && project.tags.length) { %>
+        <div class="project-tags">
+          <% project.tags.forEach(function(tag) { %>
+            <span class="tag"><%= tag %></span>
+          <% }); %>
+        </div>
+      <% } %>
+      <div class="project-card-links">
+        <% if (project.links.live) { %><a href="<%= project.links.live %>" class="experience-link" target="_blank" rel="noopener">Visit live</a><% } %>
+        <% if (project.links.blog) { %><a href="<%= project.links.blog %>" class="experience-link">Read blog post</a><% } %>
+      </div>
+    </article>
+  <% }); %>
+</div>

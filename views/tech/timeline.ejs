@@ -1,0 +1,58 @@
+<div class="page-header">
+  <h1>Career Timeline</h1>
+  <p>A quick overview of where I have been and what I was building. See work experience and projects for the full detail.</p>
+</div>
+
+<div class="timeline timeline--page" role="list">
+  <% career.entries.forEach(function(entry, i) {
+    const isCurrent = !entry.end && (entry.type === 'role' || entry.type === 'project');
+    const isFirst = i === 0;
+    const dateLabel = isCurrent
+      ? 'Present'
+      : (entry.type === 'education' && entry.end ? formatYearMonth(entry.end) : formatYearMonth(entry.start));
+  %>
+    <article
+      class="timeline-entry<%= isFirst ? ' is-active' : '' %><%= isCurrent ? ' is-current' : '' %>"
+      role="listitem"
+      data-year="<%= entry.start.slice(0, 4) %>"
+      style="--entry-index: <%= i %>"
+    >
+      <div class="timeline-marker">
+        <span class="timeline-dot" aria-hidden="true"></span>
+      </div>
+      <div class="timeline-card">
+        <div class="timeline-card-compact">
+          <time class="timeline-card-dates" datetime="<%= entry.start %>/<%= entry.end || '' %>"><%= dateLabel %></time>
+          <div class="timeline-card-main">
+            <div class="timeline-card-topline">
+              <span class="timeline-type timeline-type--<%= entry.type %>"><%= entry.type %></span>
+              <% if (isCurrent) { %><span class="timeline-now">Now</span><% } %>
+            </div>
+            <h3 class="timeline-card-title"><%= entry.title %></h3>
+            <p class="timeline-card-org">
+              <%= entry.org %><% if (entry.location) { %> · <%= entry.location %><% } %>
+            </p>
+            <% if (entry.highlights && entry.highlights.length) { %>
+              <ul class="timeline-highlights">
+                <% entry.highlights.forEach(function(line) { %>
+                  <li><%= line %></li>
+                <% }); %>
+              </ul>
+            <% } %>
+            <% if (entry.links && entry.links.length) { %>
+              <div class="timeline-links">
+                <% entry.links.forEach(function(link) { %>
+                  <a
+                    href="<%= link.href %>"
+                    class="timeline-link"
+                    <% if (link.href.startsWith('http')) { %> target="_blank" rel="noopener"<% } %>
+                  ><%= link.label %></a>
+                <% }); %>
+              </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </article>
+  <% }); %>
+</div>

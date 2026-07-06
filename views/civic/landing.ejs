@@ -1,0 +1,45 @@
+<section class="civic-hero">
+  <div class="civic-hero-photo">
+    <div class="photo-placeholder" role="img" aria-label="Professional headshot placeholder">
+      <span class="photo-initials">EI</span>
+      <span class="photo-placeholder-label">Photo coming soon</span>
+    </div>
+  </div>
+  <div class="civic-hero-text">
+    <h1 class="civic-hero-title"><%= profile.name %></h1>
+    <p class="civic-hero-subtitle"><%= site.civic.subtitle %></p>
+    <p class="civic-hero-disclaimer"><%= site.civic.disclaimer %></p>
+  </div>
+</section>
+
+<section class="civic-section focus-section">
+  <h2>Focus Areas</h2>
+  <ul class="focus-list">
+    <% site.civic.focusAreas.forEach(function(area) { %>
+      <li><%= area %></li>
+    <% }); %>
+  </ul>
+</section>
+
+<% if (posts.length) { %>
+<section class="civic-section featured-section">
+  <div class="section-header">
+    <h2>Featured Essays</h2>
+    <a href="/civic/writing" class="section-link">All essays →</a>
+  </div>
+
+  <div class="civic-post-list">
+    <% posts.forEach(function(post) { %>
+      <a href="/civic/writing/<%= post.slug %>" class="civic-post-card">
+        <div class="civic-post-card-meta">
+          <span class="sourced-badge">Sourced</span>
+          <span><%= post.readMinutes %> min read</span>
+          <span><%= formatDate(post.published) %></span>
+        </div>
+        <h3 class="civic-post-card-title"><%= post.title %></h3>
+        <p class="civic-post-card-summary"><%= post.summary %></p>
+      </a>
+    <% }); %>
+  </div>
+</section>
+<% } %>

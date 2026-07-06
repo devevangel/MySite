@@ -1,0 +1,21 @@
+<article class="blog-article">
+  <header class="blog-header">
+    <a href="/tech/blog" class="post-back">← Blog</a>
+    <div class="blog-meta">
+      <% if (post.published) { %><span><%= formatDate(post.published) %></span><% } %>
+      <span><%= post.readMinutes %> min read</span>
+    </div>
+    <% if (post.tags && post.tags.length) { %>
+      <div class="blog-tags" aria-label="Topics">
+        <% post.tags.forEach(function(tag) { %>
+          <span class="blog-tag"><%= tag %></span>
+        <% }); %>
+      </div>
+    <% } %>
+    <h1 class="blog-title"><%= post.title %></h1>
+    <% if (post.summary) { %><p class="blog-lead"><%= post.summary %></p><% } %>
+  </header>
+  <div class="post-content prose-tech prose-blog">
+    <%- post.html %>
+  </div>
+</article>

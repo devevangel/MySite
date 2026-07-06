@@ -1,0 +1,38 @@
+{
+  "name": "Evangel Iheuwkumere",
+  "preferredName": "Evangel",
+  "role": "Software Engineer",
+  "employer": "Marchex",
+  "about": [
+    "Software engineer at Marchex, shipping production data visualisation for enterprise conversation analytics. I like owning a problem from first idea through to something deployed and reliable.",
+    "I am a builder. I take hard problems to production and care about software that works for real users. Outside my day job I co-founded and run a live SaaS platform, and I am building a browser-based 2D top-down survival shooter with a custom-built game engine. I also work on hardware projects.",
+    "I adapt quickly to new codebases and stacks, work well in teams with regular delivery cycles, and I am comfortable taking the lead when something needs to get shipped. I enjoy teaching programming and presenting technical ideas clearly."
+  ],
+  "products": [
+    {
+      "name": "Kevvlar",
+      "url": "https://kevvlar.com",
+      "description": "All-in-one project management SaaS: meetings, live chat, file sharing, and kanban boards on one project board. Access is tied to the project, so adding or removing a member updates every feature at once. ~150 users, live since 2021."
+    },
+    {
+      "name": "Gloomhunt",
+      "url": "https://gloomhunt.onrender.com",
+      "description": "Browser-based 2D top-down survival shooter with a custom-built game engine. Players can enter paid prize challenges; the server checks every winning score before payout so results stay fair."
+    }
+  ],
+  "email": "dev.evangel@gmail.com",
+  "skills": {
+    "Languages": ["JavaScript", "TypeScript", "C#", "Python", "SQL", "PHP"],
+    "Frontend": ["Angular", "React", "React Native", "Vue", "Tailwind CSS", "HTML5 Canvas"],
+    "Backend": ["Node.js", "Express", ".NET", "NestJS", "REST APIs", "WebSockets", "Stripe", "OAuth"],
+    "Databases": ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Supabase"],
+    "Cloud & DevOps": ["AWS", "Azure", "Docker", "CI/CD", "Git"],
+    "AI & ML": ["Azure AI Language Studio", "Amazon Bedrock", "AWS Lambda"],
+    "Practices": ["Vitest", "Figma", "Agile", "SAFe"]
+  },
+  "social": {
+    "github": null,
+    "linkedin": null,
+    "twitter": null
+  }
+}

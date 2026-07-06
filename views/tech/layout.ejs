@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %> · <%= profile.preferredName || profile.name %></title>
+  <% if (typeof canonicalUrl !== 'undefined' && canonicalUrl) { %>
+  <link rel="canonical" href="<%= canonicalUrl %>">
+  <meta property="og:title" content="<%= pageTitle %> · <%= profile.preferredName || profile.name %>">
+  <meta property="og:url" content="<%= canonicalUrl %>">
+  <meta property="og:type" content="article">
+  <% if (typeof postSummary !== 'undefined' && postSummary) { %>
+  <meta property="og:description" content="<%= postSummary %>">
+  <meta name="description" content="<%= postSummary %>">
+  <% } %>
+  <% } %>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tech.css">
+</head>
+<body class="tech-body">
+  <header class="tech-header">
+    <nav class="tech-nav" aria-label="Main">
+      <a href="/tech" class="tech-logo <%= pageTitle === 'Home' ? 'nav-active' : '' %>"><%= profile.preferredName || profile.name %></a>
+      <button type="button" class="tech-nav-toggle" aria-expanded="false" aria-controls="tech-nav-menu" aria-label="Open menu">
+        <span class="tech-nav-toggle-bar"></span>
+        <span class="tech-nav-toggle-bar"></span>
+        <span class="tech-nav-toggle-bar"></span>
+      </button>
+      <div class="tech-nav-links" id="tech-nav-menu">
+        <a href="/tech/experience" class="<%= pageTitle === 'Work Experience' ? 'nav-active' : '' %>">Work Experience</a>
+        <a href="/tech/projects" class="<%= pageTitle === 'Projects' ? 'nav-active' : '' %>">Projects</a>
+        <a href="/tech/blog" class="<%= pageTitle === 'Blog' ? 'nav-active' : '' %>">Blog</a>
+        <a href="/tech/timeline" class="<%= pageTitle === 'Career Timeline' ? 'nav-active' : '' %>">Career Timeline</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="tech-main">
+    <%- body %>
+  </main>
+
+  <footer class="tech-footer">
+    <div class="tech-footer-inner">
+      <p class="tech-footer-name"><%= profile.name %></p>
+      <% if (profile.email) { %><p class="tech-footer-email"><a href="mailto:<%= profile.email %>"><%= profile.email %></a></p><% } %>
+      <div class="tech-footer-links">
+        <% if (profile.social.github) { %><a href="<%= profile.social.github %>" target="_blank" rel="noopener">GitHub</a><% } %>
+        <% if (profile.social.linkedin) { %><a href="<%= profile.social.linkedin %>" target="_blank" rel="noopener">LinkedIn</a><% } %>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/nav.js" defer></script>
+  <script src="/js/timeline.js" defer></script>
+  <script src="/js/experience.js" defer></script>
+</body>
+</html>
