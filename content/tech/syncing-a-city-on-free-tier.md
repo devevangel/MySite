@@ -13,16 +13,16 @@ tags: ["Maps", "OpenStreetMap", "Databases", "Free hosting"]
 
 OpenStreetMap data grows fast once you materialise nodes, ways, and spatial indexes. A regional extract that looks manageable on disk can expand to **gigabytes** in PostgreSQL. On a 500MB hosting tier, the math does not work if you try to own the map upfront.
 
-I needed local street geometry for spatial queries, but not for the whole country — only where users actually draw their areas. **On-demand city sync** was the pattern that fit the budget.
+I needed local street geometry for spatial queries, but not for the whole country  - only where users actually draw their areas. **On-demand city sync** was the pattern that fit the budget.
 
 ## The pattern
 
 When a user defines a new area:
 
 1. **Detect the city** for a point inside it (Overpass `is_in` or equivalent)
-2. **Check cache** — synced this city recently? (I used ~42 days)
-3. **If missing, sync once** — download that city's streets, store nodes and ways in PostGIS, index them
-4. **Query locally after that** — no upstream street fetch per user action
+2. **Check cache**  - synced this city recently? (I used ~42 days)
+3. **If missing, sync once**  - download that city's streets, store nodes and ways in PostGIS, index them
+4. **Query locally after that**  - no upstream street fetch per user action
 
 First sync in a new city costs time (network + inserts). You pay once per city, not once for an entire region you may never need.
 

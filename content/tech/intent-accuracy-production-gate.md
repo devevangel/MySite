@@ -13,13 +13,13 @@ tags: ["AI", "NLP", "Enterprise", "Pharma"]
 
 Enterprise chatbots are not Kaggle competitions. A model that scores 88% on a benchmark but misroutes dosage questions in production is worse than a boring 95% on the intents that actually matter.
 
-I worked on pharmaceutical support bots where **intent classification** had a published production threshold — around 92%. Below that, you do not ship. Above it, you still owe evidence that regressions will not slip through on the next retrain.
+I worked on pharmaceutical support bots where **intent classification** had a published production threshold  - around 92%. Below that, you do not ship. Above it, you still owe evidence that regressions will not slip through on the next retrain.
 
 ## What "good enough" meant
 
-We iterated in Azure AI Language Studio: review misclassified utterances, add examples, remove noisy duplicates, retrain, measure again. Getting to **95%** on the target intents was not vanity — it was margin above the gate so normal drift did not instantly breach policy.
+We iterated in Azure AI Language Studio: review misclassified utterances, add examples, remove noisy duplicates, retrain, measure again. Getting to **95%** on the target intents was not vanity  - it was margin above the gate so normal drift did not instantly breach policy.
 
-Accuracy tied to business outcomes too. Better routing meant fewer overnight escalations to human reps. The programme was credited with substantial **out-of-hours support savings** — a programme-level figure, not a personal scorecard, but it explained why NLU quality was budget-worthy.
+Accuracy tied to business outcomes too. Better routing meant fewer overnight escalations to human reps. The programme was credited with substantial **out-of-hours support savings**  - a programme-level figure, not a personal scorecard, but it explained why NLU quality was budget-worthy.
 
 ## Pitfalls
 

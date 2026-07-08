@@ -21,9 +21,9 @@ Treating the balance field as source of truth. Network retries double-charge. We
 
 ## The pattern
 
-**Double-entry ledger:** every movement is a transaction row — debit account, credit account, amount, idempotency key, reference. Balance is derived (or cached with reconciliation), not blindly incremented.
+**Double-entry ledger:** every movement is a transaction row  - debit account, credit account, amount, idempotency key, reference. Balance is derived (or cached with reconciliation), not blindly incremented.
 
-Entry fees **hold** funds until a run verifies, then **capture** or **release** — similar mental model to card authorisations.
+Entry fees **hold** funds until a run verifies, then **capture** or **release**  - similar mental model to card authorisations.
 
 Payment webhooks become **events**: store the event ID, process once, ignore duplicates.
 

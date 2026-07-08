@@ -7,7 +7,7 @@ topic: anti-cheat
 project: gloomhunt
 published: 2026-03-05
 status: published
-summary: "If real money is on the line, the server has to replay the run and check the result — not take the client's word for it."
+summary: "If real money is on the line, the server has to replay the run and check the result  - not take the client's word for it."
 tags: ["Game development", "Anti-cheat", "Server verification", "Paid prizes"]
 ---
 
@@ -29,7 +29,7 @@ The server replays with the same seed, config, and inputs, then compares hashes.
 
 ## Pitfalls I hit
 
-**Non-determinism everywhere.** `Math.random()`, frame timing leaking into simulation, cosmetic effects touching game state — any of these breaks replay. Gameplay randomness went through a seeded PRNG. Visual-only effects used a separate stream. We linted against accidental `Math.random()` in sim code.
+**Non-determinism everywhere.** `Math.random()`, frame timing leaking into simulation, cosmetic effects touching game state  - any of these breaks replay. Gameplay randomness went through a seeded PRNG. Visual-only effects used a separate stream. We linted against accidental `Math.random()` in sim code.
 
 **Versioning confusion.** Bumping weapon damage in JSON is not the same as changing how damage is calculated. Mixing those caused false mismatches until sim version and config hash were clearly separated.
 

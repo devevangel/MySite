@@ -17,7 +17,7 @@ I hit this matching runs to street coverage: which roads did someone actually ru
 
 ## First approach: polyline coverage
 
-I scored how much of each street's polyline a GPS trace covered — optionally snapped via Mapbox.
+I scored how much of each street's polyline a GPS trace covered  - optionally snapped via Mapbox.
 
 In controlled tests with snapping, accuracy looked excellent (~98%). Without snapping, it dropped (~85%). I treated that as good enough while iterating.
 
@@ -31,7 +31,7 @@ In controlled tests with snapping, accuracy looked excellent (~98%). Without sna
 
 ## What worked instead: node hits
 
-Treat the network as nodes. If a GPS point falls within 25 metres of a node, record a hit (`ST_DWithin` on geography types so the radius is real metres). A street completes when enough of its nodes are hit — stricter on short cul-de-sacs.
+Treat the network as nodes. If a GPS point falls within 25 metres of a node, record a hit (`ST_DWithin` on geography types so the radius is real metres). A street completes when enough of its nodes are hit  - stricter on short cul-de-sacs.
 
 Binary hits absorb noise better than continuous line coverage. When error is larger than the feature you measure, **coarsen the feature**.
 

@@ -7,13 +7,13 @@ topic: realtime
 project: kevvlar
 published: 2021-09-14
 status: published
-summary: "Drag a card to Done and every teammate sees it move — no refresh."
+summary: "Drag a card to Done and every teammate sees it move  - no refresh."
 tags: ["Real-time", "WebSockets", "SaaS", "Kanban"]
 ---
 
 Collaborative UI breaks when users must refresh to see each other's changes. Kanban boards are an obvious example: drag a card to Done and everyone should see it move.
 
-Early on, our board worked like standard CRUD — update the API, hope others reload. That felt broken for a tool meant to replace juggling separate apps.
+Early on, our board worked like standard CRUD  - update the API, hope others reload. That felt broken for a tool meant to replace juggling separate apps.
 
 ## What we did
 
@@ -23,7 +23,7 @@ Clients applied events to local state. The server remained **source of truth**; 
 
 ## Pitfalls
 
-**Reconnects.** Sleeping tabs and flaky networks drop events. On reconnect, send enough state or version info to detect gaps — otherwise a user drags against stale data.
+**Reconnects.** Sleeping tabs and flaky networks drop events. On reconnect, send enough state or version info to detect gaps  - otherwise a user drags against stale data.
 
 **Ordering.** Two quick edits from different people can arrive out of order. **Monotonic event IDs** per project let clients ignore stale messages.
 

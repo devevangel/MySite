@@ -17,7 +17,7 @@ I hit this building paid bounties on a browser game. Admins wanted new rules wee
 
 ## The wrong first step
 
-Hard-coded templates in the client worked for three bounties. The fourth request was always a combination nobody predicted — timer AND kill count AND item restriction. Multiplying hand-written templates does not scale.
+Hard-coded templates in the client worked for three bounties. The fourth request was always a combination nobody predicted  - timer AND kill count AND item restriction. Multiplying hand-written templates does not scale.
 
 ## What worked
 

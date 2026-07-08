@@ -11,7 +11,7 @@ summary: "NLU improvements are useless if validation takes longer than the sprin
 tags: ["AI", "Testing", "React", "Enterprise"]
 ---
 
-Machine learning demos are fast. Production chatbots are slow — not because training takes forever, but because **proving** a change is safe often does.
+Machine learning demos are fast. Production chatbots are slow  - not because training takes forever, but because **proving** a change is safe often does.
 
 In a pharmaceutical environment, chatbot updates need repeatable validation: scripted conversations, expected intents, regression checks. Our team ran much of that by hand. A single cycle could cost **more than a full day** of tester time. NLU tuning that looked quick on paper waited on humans clicking through flows.
 
@@ -23,7 +23,7 @@ That mismatch kills iteration. If validation is the long pole, teams stop experi
 
 ## What I built
 
-A **React testing tool** that let testers run structured conversation suites against staging bots, compare outputs to expectations, and sign off faster. It was adopted team-wide — not because it was flashy, but because it removed repetitive clicking.
+A **React testing tool** that let testers run structured conversation suites against staging bots, compare outputs to expectations, and sign off faster. It was adopted team-wide  - not because it was flashy, but because it removed repetitive clicking.
 
 The lesson was not "automate everything." It was **automate the repetitive proof** so humans focus on judgment calls regulation actually requires.
 
@@ -35,4 +35,4 @@ The lesson was not "automate everything." It was **automate the repetitive proof
 
 ## Takeaway
 
-If your AI pipeline is fast but releases are slow, measure where time goes. Often the fix is a focused internal tool that makes validation repeatable — not another model architecture slide.
+If your AI pipeline is fast but releases are slow, measure where time goes. Often the fix is a focused internal tool that makes validation repeatable  - not another model architecture slide.

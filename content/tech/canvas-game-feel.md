@@ -11,7 +11,7 @@ summary: "Custom canvas engine tricks: particle pools, directional hit feedback,
 tags: ["Game development", "Canvas", "Sound design", "Visual effects"]
 ---
 
-Commercial engines ship editors, asset pipelines, and years of polish defaults. Building on raw Canvas means you earn "game feel" yourself — but you also learn which tricks actually matter.
+Commercial engines ship editors, asset pipelines, and years of polish defaults. Building on raw Canvas means you earn "game feel" yourself  - but you also learn which tricks actually matter.
 
 These are patterns I used on a 2D browser shooter that had to stay fast on mid-range phones.
 
@@ -36,7 +36,7 @@ const t = 1 - dist / maxDistance;
 return baseVolume * t * t;
 ```
 
-Gunshots stay configured per weapon in JSON. On mobile, audio must unlock after a user gesture — plan for that in your boot flow.
+Gunshots stay configured per weapon in JSON. On mobile, audio must unlock after a user gesture  - plan for that in your boot flow.
 
 ## Quality tiers
 
