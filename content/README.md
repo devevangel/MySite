@@ -40,10 +40,11 @@ Posts are markdown in `content/tech/` and `content/civic/`. Frontmatter + body. 
 | `bots-first-then-people` | 2026-09-05 | live-ops | draft | Bot ladder prices day one; humans take over. |
 | `flag-the-run-never-lock-the-player` | 2026-09-06 | anti-cheat | draft | Integrity pauses the reward, never blocks play. |
 | `a-changed-migration-is-a-broken-promise` | 2026-09-07 | operations | draft | Migration checksums after 2026-09-08 drift. |
+| `one-minute-to-decide-a-flagged-run` | 2026-09-16 | anti-cheat | draft | Review screen: sentence, watch, two buttons. |
 
 ### Ideas already used (off the table unless the build moved again)
 
-Replay · canvas juice · hitch detector · challenges-as-data · wallet ledger · kill switches · human-population pricing · one vote per person · self-heal · easy/hard asymmetry · replay ≠ human · server-clock heartbeats · slow-mo / stall-not-slow · mid-run prefix commits · review queue · delayed rewards · too-good-too-fast stats · researched-but-unshipped list · engine-version contract · rolling seeds · human-like bot · bots-first calibration · flag-the-run-never-lock-play · migration checksums + local-DB guard.
+Replay · canvas juice · hitch detector · challenges-as-data · wallet ledger · kill switches · human-population pricing · one vote per person · self-heal · easy/hard asymmetry · replay ≠ human · server-clock heartbeats · slow-mo / stall-not-slow · mid-run prefix commits · review queue · delayed rewards · too-good-too-fast stats · researched-but-unshipped list · engine-version contract · rolling seeds · human-like bot · bots-first calibration · flag-the-run-never-lock-play · migration checksums + local-DB guard · one-minute review screen.
 
 ### Still open (built in Gloomhunt, not a post yet)
 
@@ -88,6 +89,7 @@ Do not write money, legal, launch-date, or "players confirmed" posts. Many items
 - Replay → heartbeats → slow-mo → mid-run commit → hard rules → money waits → too-good → unshipped layers
 - Unshipped layers → **the seed you cannot see ahead** → **a bot that plays like a person** → **bots first, then people** → one player one vote
 - Verifying paid runs → **engine version is a contract** → **bots first, then people**
+- Hard rules → **one minute to decide a flagged run** → money waits
 - Hard rules → **flag the run, never lock the player** → money waits
 - Kill switches → pricing → one vote → self-heal → too easy / too hard
 - **Changed migration** → **engine version is a contract**

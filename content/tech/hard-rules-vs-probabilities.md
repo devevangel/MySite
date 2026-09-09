@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-08-04
-status: published
+status: draft
 summary: "The most important anti-cheat decision is not what to detect. It is what to do when you detect it. Part 5: the review queue."
 tags: ["Game development", "Anti-cheat", "Fraud review", "Operations"]
 ---
@@ -42,3 +42,7 @@ Two buttons. **Clear** puts everything back: leaderboard, calibration vote, rewa
 A rule can be wrong forever. A person can be wrong once and learn. Keeping humans on the probabilistic side is not a gap in automation; it is what makes the automation safe to turn on.
 
 *Next: why money should wait.*
+
+## Update — September 2026
+
+The review queue in this post is now a screen: a sentence for why the run is there, a watch button, the player's last runs, and two decisions with a note. I wrote that up here: [A Flagged Run Should Take One Minute to Decide](/tech/blog/one-minute-to-decide-a-flagged-run).

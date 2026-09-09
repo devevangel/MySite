@@ -49,4 +49,6 @@ Layer 5 — revealing the seed in pieces — is built. The server no longer hand
 
 Layer 6 — a behavioural model — has a first version. We test those checks against bot runs we wrote to look like cheats, and against bot runs we wrote to look honest. We still do not have a labelled set of human runs, so those checks watch in the background. They do not decide money on their own. See [A Bot That Plays Like a Person](/tech/blog/a-bot-that-plays-like-a-person).
 
+Layer 1 — a replay viewer for reviewers — is built enough to watch a flagged run from the review screen. Same engine, same inputs. See [A Flagged Run Should Take One Minute to Decide](/tech/blog/one-minute-to-decide-a-flagged-run).
+
 The other layers in this post are still not shipped.
