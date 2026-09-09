@@ -39,4 +39,4 @@ Any time a system learns from behaviour, ask who can vote and how often. The ans
 
 ## Update — September 2026
 
-One vote per person is still the rule. The list of who is allowed to vote now lives in one place. Every job that prices a challenge reads that same list. Bot runs are marked as bot runs, so they can never sneak onto it. First-session noise and runs from an old engine version stay out too. See [Bots First, Then People](/tech/blog/bots-first-then-people).
+One vote per person is still the rule. "Person" is now a cluster: accounts that share a bank, a phone, or a device count as one vote, not three. The list of who is allowed to vote lives in one place. Every job that prices a challenge reads that same list. Bot runs are marked as bot runs, so they can never sneak onto it. First-session noise and runs from an old engine version stay out too. See [Bots First, Then People](/tech/blog/bots-first-then-people).

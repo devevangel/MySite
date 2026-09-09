@@ -45,4 +45,4 @@ A rule can be wrong forever. A person can be wrong once and learn. Keeping human
 
 ## Update — September 2026
 
-The review queue in this post is now a screen: a sentence for why the run is there, a watch button, the player's last runs, and two decisions with a note. I wrote that up here: [A Flagged Run Should Take One Minute to Decide](/tech/blog/one-minute-to-decide-a-flagged-run).
+The rule in this post is still the rule: impossibilities fail on their own, maybes wait for a person. What shipped since is the scoring behind that wait — a flag pauses the reward and leaves play open. The review page is not built yet. [Flag the Run, Never Lock the Player](/tech/blog/flag-the-run-never-lock-the-player).

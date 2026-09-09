@@ -45,10 +45,14 @@ That is the goal: not a system nobody can beat, but one where beating it costs m
 
 ## Update — September 2026
 
-Layer 5 — revealing the seed in pieces — is built. The server no longer hands the whole future at the start. Details: [The Seed You Cannot See Ahead](/tech/blog/the-seed-you-cannot-see-ahead).
+Four things around this list have shipped. The original ranking stays as I wrote it in August. This is what moved.
 
-Layer 6 — a behavioural model — has a first version. We test those checks against bot runs we wrote to look like cheats, and against bot runs we wrote to look honest. We still do not have a labelled set of human runs, so those checks watch in the background. They do not decide money on their own. See [A Bot That Plays Like a Person](/tech/blog/a-bot-that-plays-like-a-person).
+The seed now arrives in pieces. The server no longer hands the whole future at the start. [The Seed You Cannot See Ahead](/tech/blog/the-seed-you-cannot-see-ahead).
 
-Layer 1 — a replay viewer for reviewers — is built enough to watch a flagged run from the review screen. Same engine, same inputs. See [A Flagged Run Should Take One Minute to Decide](/tech/blog/one-minute-to-decide-a-flagged-run).
+Integrity scoring is live. A flag holds the reward and leaves the start button alone. [Flag the Run, Never Lock the Player](/tech/blog/flag-the-run-never-lock-the-player).
 
-The other layers in this post are still not shipped.
+Accounts that share a bank, a phone, or a device are one cluster. Votes and caps use that cluster, not the login count. That is the one-vote rule with a harder "who is one person." [One Player, One Vote](/tech/blog/one-player-one-vote).
+
+We have a bot that only sees what a screen would show, and a ladder of those bots that prices a challenge before people arrive. We also run them at the checks. That is the bot validation. It is not a labelled-human behavioural model, and it does not decide money on its own. [A Bot That Plays Like a Person](/tech/blog/a-bot-that-plays-like-a-person). [Bots First, Then People](/tech/blog/bots-first-then-people).
+
+Layer 1 — a replay viewer on a review page a non-engineer can finish in a minute — is not built. Neither is a vendor device fingerprint, nor an identity check before first withdrawal. Those stay on the list.
