@@ -6,7 +6,7 @@ type: blog
 topic: live-ops
 project: gloomhunt
 published: 2026-05-12
-status: published
+status: draft
 summary: "How hard should 'survive 4 minutes' be for a ₦200 entry and ₦2,500 prize? Instead of guessing, the board reads it off what real players already do. Part 2."
 tags: ["Game development", "Live ops", "Statistics", "Game economy"]
 ---
@@ -40,3 +40,7 @@ Composite challenges — survive *and* reach a kill count *and* avoid an item �
 Pick the business numbers by hand. Let the population pick the difficulty. The next post is about why "population" means players, not runs.
 
 *Next: one player, one vote.*
+
+## Update — September 2026
+
+We still want real players to set the difficulty. Until enough clean human runs exist, a ladder of bots is the first guess, and we keep prizes conservative. When the human sample is large enough, the bot guess steps aside. See [Bots First, Then People](/tech/blog/bots-first-then-people).

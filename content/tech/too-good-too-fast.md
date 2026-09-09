@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-08-18
-status: published
+status: draft
 summary: "Chess sites have no client to inspect, so they lean on statistics against a known population. We borrowed the idea for game runs and for accounts. Part 7."
 tags: ["Game development", "Anti-cheat", "Statistics", "Fraud review"]
 ---
@@ -35,3 +35,7 @@ None of this blocks anything on its own. Outliers park a prize for review and ap
 No model, no training data, no labelled corpus. Just our own verified population and a willingness to say "unusual" rather than "guilty." The behavioural model — the one that reads mouse jitter and reaction times — comes later, once paid testers have given us a few hundred runs we *know* were human.
 
 *Next, closing the series: the layers we researched but have not shipped, and why.*
+
+## Update — September 2026
+
+The behavioural checks I said would come later now exist as a first version. We can run them against bot profiles that play like cheats and bot profiles that play like people. We still lack a labelled human corpus, so those checks stay in the background. The population statistics in this post are unchanged. See [A Bot That Plays Like a Person](/tech/blog/a-bot-that-plays-like-a-person).

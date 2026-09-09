@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-07-21
-status: published
+status: draft
 summary: "A rewind, a splice, or a run generated after the fact all produce a valid-looking log. The fix is to commit to the log every 30 seconds, before it is finished. Part 4."
 tags: ["Game development", "Anti-cheat", "Cryptography", "Liveness"]
 ---
@@ -38,3 +38,9 @@ A mismatch is a hard fail. There is no honest way to produce one.
 Rewinds, splices, and offline logs are gone as a category. What remains is the honest ceiling: a bot playing live, at human pace, on a real device. That is the fight the next posts are about.
 
 *Next: hard rules for impossibilities, humans for probabilities.*
+
+## Update — September 2026
+
+The fingerprint-on-every-heartbeat idea is the same. It now rides a more frequent heartbeat, and that same reply can also hand the client the next piece of randomness. See [The Seed You Cannot See Ahead](/tech/blog/the-seed-you-cannot-see-ahead).
+
+The thirty-second number in the body above is what we shipped first.

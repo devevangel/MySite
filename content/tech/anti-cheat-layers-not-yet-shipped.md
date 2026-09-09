@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-08-25
-status: published
+status: draft
 summary: "Six more layers, ranked by value, and an honest statement of what no layer can catch. Part 8, closing the series."
 tags: ["Game development", "Anti-cheat", "Security", "Roadmap"]
 ---
@@ -42,3 +42,11 @@ Reaction times, aim smoothness, input rhythm — compared to a corpus of runs we
 A bot that plays live at human pace with realistic jitter, on a real device, behind a real identity, is indistinguishable from an excellent player. No layer changes that. What the layers do is make it the *only* attack left, and the payout caps and holds bound what it can ever extract.
 
 That is the goal: not a system nobody can beat, but one where beating it costs more than it pays.
+
+## Update — September 2026
+
+Layer 5 — revealing the seed in pieces — is built. The server no longer hands the whole future at the start. Details: [The Seed You Cannot See Ahead](/tech/blog/the-seed-you-cannot-see-ahead).
+
+Layer 6 — a behavioural model — has a first version. We test those checks against bot runs we wrote to look like cheats, and against bot runs we wrote to look honest. We still do not have a labelled set of human runs, so those checks watch in the background. They do not decide money on their own. See [A Bot That Plays Like a Person](/tech/blog/a-bot-that-plays-like-a-person).
+
+The other layers in this post are still not shipped.

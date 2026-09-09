@@ -6,7 +6,7 @@ type: blog
 topic: live-ops
 project: gloomhunt
 published: 2026-05-19
-status: published
+status: draft
 summary: "If one enthusiast plays 200 runs, the difficulty curve becomes their difficulty curve. Calibration counts people, not attempts. Part 3."
 tags: ["Game development", "Live ops", "Statistics", "Testing"]
 ---
@@ -36,3 +36,7 @@ Every calibration pass also saves a **snapshot**: how many players voted, the ke
 Any time a system learns from behaviour, ask who can vote and how often. The answers are your defence against both the enthusiast and the farm.
 
 *Next: a bounty board that heals itself.*
+
+## Update — September 2026
+
+One vote per person is still the rule. The list of who is allowed to vote now lives in one place. Every job that prices a challenge reads that same list. Bot runs are marked as bot runs, so they can never sneak onto it. First-session noise and runs from an old engine version stay out too. See [Bots First, Then People](/tech/blog/bots-first-then-people).

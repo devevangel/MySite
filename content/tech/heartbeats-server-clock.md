@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-06-23
-status: published
+status: draft
 summary: "Every 30 seconds the game reports in. The server, not the browser, writes down when. That timestamp is the backbone of proving a run was played live. Part 2."
 tags: ["Game development", "Anti-cheat", "Server verification", "Liveness"]
 ---
@@ -39,3 +39,11 @@ Unproven is not the same as guilty. A player on a bad mobile connection will som
 A run with thin evidence still pays — after someone looks. Nobody honest loses a prize to a flaky network; nobody dishonest gets paid by a machine.
 
 *Next: the one cheat that passes both replay and heartbeats — and how we closed it.*
+
+## Update — September 2026
+
+Heartbeats still work the way this post describes: the server stamps when it heard from you. Two things changed.
+
+The messages now come more often, and each reply can include the next piece of the run's randomness. That is how we stopped a program from seeing the whole future at the start. I wrote that up here: [The Seed You Cannot See Ahead](/tech/blog/the-seed-you-cannot-see-ahead).
+
+The thirty-second number in the body above is what we shipped first. Treat it as history.

@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-06-09
-status: published
+status: draft
 summary: "Server-side replay proves the run is real. It says nothing about whether a human played it. Part 1 of a series on securing paid game runs."
 tags: ["Game development", "Anti-cheat", "Server verification", "Paid prizes"]
 ---
@@ -35,3 +35,7 @@ The second kind of evidence is the subject of the next few posts: the server's c
 "Replay verified" is a statement about the log, not about the person. Treat it as necessary, never as sufficient, the moment money moves.
 
 *Next in the series: the one clock a cheater cannot touch.*
+
+## Update — September 2026
+
+The scripted player in this post is no longer a thought experiment. We built one. It only sees what a screen would show, and it writes the same input log a person would. See [A Bot That Plays Like a Person](/tech/blog/a-bot-that-plays-like-a-person).

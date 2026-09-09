@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-03-05
-status: published
+status: draft
 summary: "If real money is on the line, the server has to replay the run and check the result  - not take the client's word for it."
 tags: ["Game development", "Anti-cheat", "Server verification", "Paid prizes"]
 ---
@@ -40,3 +40,13 @@ The server replays with the same seed, config, and inputs, then compares hashes.
 Design for replay before you add prizes. Retrofitting determinism into a game that grew organically is painful.
 
 If the server can reproduce the session, cheating becomes boring. If it cannot, you only have opinions.
+
+## Update — September 2026
+
+Three changes since this post.
+
+The random seed is no longer one number you get at the start. The server issues it in pieces while you play. See [The Seed You Cannot See Ahead](/tech/blog/the-seed-you-cannot-see-ahead).
+
+The engine version is stamped by the server when the run begins. A later submit cannot pick a different set of rules. See [The Engine Version Is a Contract](/tech/blog/engine-version-is-a-contract).
+
+If the replay matches, we score the run from what the server replayed — not from the numbers the browser sent. A lie in the score packet cannot change a prize.
