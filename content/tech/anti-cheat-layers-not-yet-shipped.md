@@ -11,7 +11,7 @@ summary: "Six more layers, ranked by value, and an honest statement of what no l
 tags: ["Game development", "Anti-cheat", "Security", "Roadmap"]
 ---
 
-Seven posts in, here is what is built: server replay, a server-clocked heartbeat stream, a pace floor with a pause budget, mid-run commitments, a risk queue, payout holds, and population statistics. Here is what is researched, ranked by how much I expect each to be worth.
+Seven posts in, here is what is built: server replay, a server-clocked heartbeat stream, a pace floor with a pause budget, mid-run commitments, a review queue, delayed rewards, and population statistics. Here is what is researched, ranked by how much I expect each to be worth.
 
 ## 1. A replay viewer for reviewers
 
@@ -21,13 +21,13 @@ We can already re-simulate any run. Rendering that so a reviewer can *watch* a f
 
 Ties accounts to devices, spots headless browsers and virtual machines, flags data-centre addresses. This is what turns "three accounts, one sign-up address" from a hint into a case. Needs a vendor and a privacy notice.
 
-## 3. Identity before first cash-out
+## 3. Identity before first withdrawal
 
-A one-time identity check, matched against the name on the bank account we already resolve. One human, one payout identity. It collapses multi-account farming at the only point that matters — where the money leaves.
+A one-time identity check, matched against the name on the bank account we already resolve. One human, one withdrawal identity. It collapses multi-account farming at the only point that matters — where the money leaves.
 
-## 4. A bot challenge at money edges
+## 4. A bot check at money edges
 
-An invisible challenge on challenge entry and on withdrawal. Cheap, and it raises the price of scripted farms from "write a loop" to "solve a research problem."
+An invisible check on challenge entry and on withdrawal. Cheap, and it raises the price of scripted farms from "write a loop" to "solve a research problem."
 
 ## 5. Revealing the seed in pieces
 
@@ -39,9 +39,9 @@ Reaction times, aim smoothness, input rhythm — compared to a corpus of runs we
 
 ## The honest ceiling
 
-A bot that plays live at human pace with realistic jitter, on a real device, behind a real identity, is indistinguishable from an excellent player. No layer changes that. What the layers do is make it the *only* attack left, and the payout caps and holds bound what it can ever extract.
+A bot that plays live at human pace with realistic jitter, on a real device, behind a real identity, is indistinguishable from an excellent player. No layer changes that. What the layers do is make it the *only* attack left, and reward limits plus review holds bound what it can ever take.
 
-That is the goal: not a system nobody can beat, but one where beating it costs more than it pays.
+That is the goal: not a system nobody can beat, but one where beating it costs more than it is worth.
 
 ## Update — September 2026
 

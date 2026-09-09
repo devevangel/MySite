@@ -8,10 +8,10 @@ project: gloomhunt
 published: 2026-06-09
 status: draft
 summary: "Server-side replay proves the run is real. It says nothing about whether a human played it. Part 1 of a series on securing paid game runs."
-tags: ["Game development", "Anti-cheat", "Server verification", "Paid prizes"]
+tags: ["Game development", "Anti-cheat", "Server verification", "Paid challenges"]
 ---
 
-In an earlier post I argued that when prizes are involved, the server must **replay** every run and check the result instead of trusting the browser. We built that. It works. And then I noticed the hole in it.
+In an earlier post I argued that when money is involved, the server must **replay** every run and check the result instead of trusting the browser. We built that. It works. And then I noticed the hole in it.
 
 Replay answers one question: *does this list of inputs really produce this score?* It cannot answer a second question: *did a person produce those inputs, at a real keyboard, in real time?*
 
@@ -19,7 +19,7 @@ Replay answers one question: *does this list of inputs really produce this score
 
 Take our own game code, run it in a script with no screen, and feed it inputs from a program instead of a human. The run is genuine. The inputs are real. The final state matches. Replay says **valid** — because it is a valid run. It just was not played by anyone.
 
-The same goes for a run played at half speed, or a run where the player rewound the last thirty seconds and tried again. The finished log is internally consistent. Replay is happy. The prize is wrong.
+The same goes for a run played at half speed, or a run where the player rewound the last thirty seconds and tried again. The finished log is internally consistent. Replay is happy. The reward is wrong.
 
 ## Two questions, two kinds of evidence
 

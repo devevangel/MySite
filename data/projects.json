@@ -3,7 +3,7 @@
     {
       "id": "gloomhunt",
       "title": "Gloomhunt",
-      "summary": "Browser-based survival shooter running on a custom game engine with deterministic replay, server-side score verification, and a double-entry financial ledger for real-money prize challenges. 50,000+ lines of application code, 230 automated tests. Node.js, PostgreSQL.",
+      "summary": "Browser-based survival shooter running on a custom game engine with deterministic replay, server-side score verification, and a double-entry financial ledger for paid challenges. 50,000+ lines of application code, 230 automated tests. Node.js, PostgreSQL.",
       "status": "in-development",
       "tags": ["javascript", "canvas", "nodejs", "postgresql"],
       "links": {

@@ -4,7 +4,7 @@ Read this before writing a new post. It exists so the next pass does not have to
 
 Posts are markdown in `content/tech/` and `content/civic/`. Frontmatter + body. `lib/content.js` parses them. `server.js` serves `/tech/blog/:slug` and `/civic/writing/:slug`. Drafts stay off the public list unless `?preview=1` in development. The author publishes by setting `status: published`.
 
-**Voice:** first person, one idea, plain titles, easy English. No "Part N of M" on new posts. No invented numbers, player data, secrets, env values, detector limits, or cheat-useful thresholds.
+**Voice:** first person, one idea, plain titles, easy English. No "Part N of M" on new posts. No invented numbers, player data, secrets, env values, detector limits, or cheat-useful thresholds. No gambling tone: never prize, payout, pot, pool (except object reuse, say "reuse"), house, deal, odds, cash-out, cooling, risk queue, or bounty-as-bet. Prefer reward, credit, review queue, entry cost, finish rate, paid challenge.
 
 **Updates:** do not rewrite an old body. Append `## Update — <Month YYYY>` at the end. Keep `published` as-is. Set `status: draft` until the author publishes.
 
@@ -38,12 +38,12 @@ Posts are markdown in `content/tech/` and `content/civic/`. Frontmatter + body. 
 | `the-seed-you-cannot-see-ahead` | 2026-09-03 | anti-cheat | draft | Rolling seed pieces; no lookahead oracle. |
 | `a-bot-that-plays-like-a-person` | 2026-09-04 | game-dev | draft | Synthetic Hunter: see-only, three habits, composure. |
 | `bots-first-then-people` | 2026-09-05 | live-ops | draft | Bot ladder prices day one; humans take over. |
-| `hold-the-prize-never-the-game` | 2026-09-06 | anti-cheat | draft | Integrity holds money, never blocks play. |
+| `flag-the-run-never-lock-the-player` | 2026-09-06 | anti-cheat | draft | Integrity pauses the reward, never blocks play. |
 | `a-changed-migration-is-a-broken-promise` | 2026-09-07 | operations | draft | Migration checksums after 2026-09-08 drift. |
 
 ### Ideas already used (off the table unless the build moved again)
 
-Replay · canvas juice · hitch detector · bounty-as-data · wallet ledger · kill switches · human-population pricing · one vote per person · self-heal · easy/hard asymmetry · replay ≠ human · server-clock heartbeats · slow-mo / stall-not-slow · mid-run prefix commits · risk queue · payout holds · too-good-too-fast stats · researched-but-unshipped list · engine-version contract · rolling seeds · human-like bot · bots-first calibration · hold-money-never-block-play · migration checksums + local-DB guard.
+Replay · canvas juice · hitch detector · challenges-as-data · wallet ledger · kill switches · human-population pricing · one vote per person · self-heal · easy/hard asymmetry · replay ≠ human · server-clock heartbeats · slow-mo / stall-not-slow · mid-run prefix commits · review queue · delayed rewards · too-good-too-fast stats · researched-but-unshipped list · engine-version contract · rolling seeds · human-like bot · bots-first calibration · flag-the-run-never-lock-play · migration checksums + local-DB guard.
 
 ### Still open (built in Gloomhunt, not a post yet)
 
@@ -52,7 +52,7 @@ Only write these if they still have a story after reading the code. Do not inven
 - Per-type pickup metrics generated from the item list (`pickups.<type>.{count,valueGranted,activeMs}`).
 - Clean-data gate as a *single door* every job must use (touched in the one-vote update; a full post only if the "one function, many consumers" story is still new).
 - Identity clusters (bank / phone / device) beyond the one-vote mention.
-- Hidden canary conditions / honeypot bounty.
+- Hidden canary conditions / honeypot challenge.
 - Practice mode on a flagship recipe with fresh seeds.
 - Device-class MATCH floor (pause paid starts for a broken platform class).
 - Verification queue in its own worker, not inside the web process.
@@ -88,6 +88,6 @@ Do not write money, legal, launch-date, or "players confirmed" posts. Many items
 - Replay → heartbeats → slow-mo → mid-run commit → hard rules → money waits → too-good → unshipped layers
 - Unshipped layers → **the seed you cannot see ahead** → **a bot that plays like a person** → **bots first, then people** → one player one vote
 - Verifying paid runs → **engine version is a contract** → **bots first, then people**
-- Hard rules → **hold the prize, never the game** → money waits
+- Hard rules → **flag the run, never lock the player** → money waits
 - Kill switches → pricing → one vote → self-heal → too easy / too hard
 - **Changed migration** → **engine version is a contract**

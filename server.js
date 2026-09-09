@@ -150,6 +150,7 @@ const BLOG_SLUG_REDIRECTS = {
   'chatbot-four-million-savings': 'intent-accuracy-production-gate',
   'double-entry-wallet-ledger': 'wallet-balances-should-be-a-ledger',
   'bounties-without-new-code': 'ship-challenges-without-code',
+  'hold-the-prize-never-the-game': 'flag-the-run-never-lock-the-player',
 };
 
 app.get('/tech/blog/:slug', (req, res, next) => {

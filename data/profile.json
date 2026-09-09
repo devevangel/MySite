@@ -24,7 +24,7 @@
     {
       "name": "Gloomhunt",
       "url": "https://gloomhunt.onrender.com",
-      "description": "Browser-based survival shooter running on a custom game engine with deterministic replay, server-side score verification, and a double-entry financial ledger for real-money prize challenges. 50,000+ lines, 230 automated tests."
+      "description": "Browser-based survival shooter running on a custom game engine with deterministic replay, server-side score verification, and a double-entry financial ledger for paid challenges. 50,000+ lines, 230 automated tests."
     }
   ],
   "email": "dev.evangel@gmail.com",

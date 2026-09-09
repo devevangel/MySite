@@ -58,7 +58,7 @@
       "org": "Personal",
       "highlights": [
         "Custom game engine with deterministic replay and server-side score verification.",
-        "Double-entry financial ledger for real-money payouts. 50,000+ lines, 230 tests."
+        "Double-entry financial ledger for paid-challenge rewards. 50,000+ lines, 230 tests."
       ],
       "links": [
         { "label": "Project details →", "href": "/tech/projects#gloomhunt" }

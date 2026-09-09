@@ -24,11 +24,11 @@ Two guardrails made this safe:
 
 ## Accounts against each other
 
-The other statistic is about people, not runs. When a reviewer opens a flagged win they see how many *other* accounts share its sign-up address, its device, and — the strongest tie — its **bank account**. Someone can create ten logins. Cashing out still needs one real account at a real bank, and two players paying into the same one is a pattern with very few innocent explanations.
+The other statistic is about people, not runs. When a reviewer opens a flagged win they see how many *other* accounts share its sign-up address, its device, and — the strongest tie — its **bank account**. Someone can create ten logins. A withdrawal still needs one real account at a real bank, and two players sending money into the same one is a pattern with very few innocent explanations.
 
 ## Where it lives
 
-None of this blocks anything on its own. Outliers park a prize for review and appear in the risk queue with the numbers beside them. Cluster counts sit under the player's name. The reviewer decides.
+None of this blocks anything on its own. Outliers park the reward for review and appear in the review queue with the numbers beside them. Cluster counts sit under the player's name. The reviewer decides.
 
 ## What it does not need
 

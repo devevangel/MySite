@@ -25,7 +25,7 @@ Because a player is a vote, twenty runs from one tester is worth roughly the sam
 
 ## Guests watch, players vote
 
-Anyone can play without an account, and we do track those sessions — an anonymous cookie, the standard funnel method, so we can see who drops off before signing up. But guest runs **never price a bounty**. A cookie is free; a signed-in account is at least a small cost, and calibration should only listen to inputs that cost something to fake.
+Anyone can play without an account, and we do track those sessions — an anonymous cookie, the standard funnel method, so we can see who drops off before signing up. But guest runs **never set the difficulty of a challenge**. A cookie is free; a signed-in account is at least a small cost, and calibration should only listen to inputs that cost something to fake.
 
 ## Remembering the curve
 
@@ -35,7 +35,7 @@ Every calibration pass also saves a **snapshot**: how many players voted, the ke
 
 Any time a system learns from behaviour, ask who can vote and how often. The answers are your defence against both the enthusiast and the farm.
 
-*Next: a bounty board that heals itself.*
+*Next: a challenge board that heals itself.*
 
 ## Update — September 2026
 

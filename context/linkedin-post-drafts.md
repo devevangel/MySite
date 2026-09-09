@@ -40,14 +40,14 @@ First Class. Software Engineering. University of Portsmouth. 2026.
 
 I built a game engine from scratch. No Unity. No Godot. No frameworks. Vanilla JavaScript and HTML5 Canvas.
 
-Gloomhunt is a browser-based survival shooter where players compete in paid prize challenges. When real money is on the line, you cannot trust the client. So the architecture had to solve a hard problem: how do you verify a game score without watching the player?
+Gloomhunt is a browser-based survival shooter where players compete in paid challenges. When money is on the line, you cannot trust the client. So the architecture had to solve a hard problem: how do you verify a game score without watching the player?
 
-The answer was deterministic replay. Every game run is a pure function of a seed, a frozen config, and an ordered input log. The server re-simulates the run and compares end-state hashes. Match means valid. Mismatch means no payout.
+The answer was deterministic replay. Every game run is a pure function of a seed, a frozen config, and an ordered input log. The server re-simulates the run and compares end-state hashes. Match means valid. Mismatch means no reward.
 
 What this required:
 - Seeded PRNG (mulberry32) for all gameplay randomness. No Math.random() in simulation code.
-- A double-entry financial ledger for real-money flows. Hold, capture, release, refund lifecycle with idempotency keys.
-- An 8-page admin console for bounty management, settlement review, player wallets, and anti-cheat verification.
+- A double-entry financial ledger for paid-challenge money. Reserve, capture, release, refund lifecycle with idempotency keys.
+- An 8-page admin console for challenge management, settlement review, player balances, and anti-cheat verification.
 - 230 automated tests covering the settlement pipeline, wallet operations, and verification logic.
 
 50,000+ lines of application code. Zero client-side dependencies.

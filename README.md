@@ -266,7 +266,7 @@ Powers the interactive career timeline on `/tech`.
       "title": "Gloomhunt",
       "org": "Personal",
       "location": null,
-      "summary": "Browser survival shooter with real-money bounties and deterministic anti-cheat.",
+      "summary": "Browser survival shooter with paid challenges and deterministic anti-cheat.",
       "details": [
         "Vanilla JS + Canvas, no framework",
         "Node/Express backend, PostgreSQL via Supabase",
@@ -322,7 +322,7 @@ Project catalogue cards on the tech landing page (below timeline).
     {
       "id": "gloomhunt",
       "title": "Gloomhunt",
-      "summary": "Top-down browser survival shooter with real-money bounties.",
+      "summary": "Top-down browser survival shooter with paid challenges.",
       "status": "in-development",
       "tags": ["javascript", "canvas", "nodejs"],
       "links": {
@@ -363,7 +363,7 @@ published: 2026-07-05
 status: published           # draft | published
 tags: [game-dev, javascript, nigeria]
 project: gloomhunt
-summary: "A browser survival shooter with real-money bounties and deterministic anti-cheat."
+summary: "A browser survival shooter with paid challenges and deterministic anti-cheat."
 ---
 ```
 
@@ -469,7 +469,7 @@ The main interactive feature on the tech landing page.
 
 ```
      2025 ──●── Gloomhunt (Personal)
-              │  Browser survival shooter with real-money bounties
+              │  Browser survival shooter with paid challenges
               │  [click to expand ▼]
               │
      2024 ──●── Software Engineer @ Marchex

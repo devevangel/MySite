@@ -7,15 +7,15 @@ topic: live-ops
 project: gloomhunt
 published: 2026-05-12
 status: draft
-summary: "How hard should 'survive 4 minutes' be for a ₦200 entry and ₦2,500 prize? Instead of guessing, the board reads it off what real players already do. Part 2."
+summary: "How hard should 'survive 4 minutes' be for a ₦200 entry and a ₦2,500 reward? Instead of guessing, the board reads it off what real players already do. Part 2."
 tags: ["Game development", "Live ops", "Statistics", "Game economy"]
 ---
 
-A paid challenge has three numbers: entry fee, prize, and how hard it is. The first two are business decisions. The third used to be a guess, and a guess is expensive in both directions — too easy and the house pays out on every run; too hard and nobody plays twice.
+A paid challenge has three numbers: entry cost, reward, and how hard it is. The first two are business decisions. The third used to be a guess, and a guess is expensive in both directions — too easy and we send a reward on every run; too hard and nobody plays twice.
 
 ## Start from a target, not a threshold
 
-The trick was to stop thinking in thresholds ("120 kills") and think in **clear rates**. Each tier has a band: a free-entry challenge should be cleared by roughly 25–35% of attempts; a ₦400 daily by about 4–6%. The band is the promise. The threshold is whatever delivers it.
+The trick was to stop thinking in thresholds ("120 kills") and think in **how often people finish**. Each tier has a band: a free-entry challenge should be finished by roughly 25–35% of attempts; a ₦400 daily by about 4–6%. The band is the promise. The threshold is whatever delivers it.
 
 ## Let the players set the threshold
 
@@ -43,4 +43,4 @@ Pick the business numbers by hand. Let the population pick the difficulty. The n
 
 ## Update — September 2026
 
-We still want real players to set the difficulty. Until enough clean human runs exist, a ladder of bots is the first guess, and we keep prizes conservative. When the human sample is large enough, the bot guess steps aside. See [Bots First, Then People](/tech/blog/bots-first-then-people).
+We still want real players to set the difficulty. Until enough clean human runs exist, a ladder of bots is the first guess, and we keep rewards conservative. When the human sample is large enough, the bot guess steps aside. See [Bots First, Then People](/tech/blog/bots-first-then-people).

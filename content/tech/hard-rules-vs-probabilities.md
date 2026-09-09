@@ -7,13 +7,13 @@ topic: anti-cheat
 project: gloomhunt
 published: 2026-08-04
 status: published
-summary: "The most important anti-cheat decision is not what to detect. It is what to do when you detect it. Part 5: the risk queue."
+summary: "The most important anti-cheat decision is not what to detect. It is what to do when you detect it. Part 5: the review queue."
 tags: ["Game development", "Anti-cheat", "Fraud review", "Operations"]
 ---
 
-Every detector we added raised the same question: now what? Block the run? Deny the prize? Ban the player?
+Every detector we added raised the same question: now what? Block the run? Deny the reward? Ban the player?
 
-The answer that held up was borrowed from how Valve reviews suspicious matches, how chess sites handle fair play, and how real-money skill-gaming companies run their risk desks. There are two kinds of signal, and they deserve two kinds of response.
+The answer that held up was borrowed from how Valve reviews suspicious matches and how chess sites handle fair play. There are two kinds of signal, and they deserve two kinds of response.
 
 ## Impossibilities get rules
 
@@ -21,21 +21,21 @@ Some things cannot happen to an honest player. Game time arriving faster than re
 
 ## Probabilities get people
 
-Everything else is a shade of grey. A run that seems slow. A pause that seems long. A brand-new account that wins big. A score in the top half-percent of everyone who has ever played. Great players, weak phones, and bad networks all live in this grey. An automatic denial here punishes the wrong person often enough to kill trust.
+Everything else is a shade of grey. A run that seems slow. A pause that seems long. A brand-new account that does unusually well. A score in the top half-percent of everyone who has ever played. Great players, weak phones, and bad networks all live in this grey. An automatic denial here punishes the wrong person often enough to kill trust.
 
 So these do not deny. They **flag**, and the flag does three things at once:
 
 - the run comes off the leaderboard,
-- it stops counting toward how we price future challenges,
-- any prize attached to it waits.
+- it stops counting toward how we set difficulty on future challenges,
+- any reward attached to it waits.
 
-Then it lands in one place: the **risk queue**.
+Then it lands in one place: the **review queue**.
 
 ## What a reviewer sees
 
 One row per run, with why it is there — in plain words, not codes. The server's heartbeat timeline, interval by interval. How the score compares to verified players on the same settings. The account's age, its verified history, and how many *other* accounts share its sign-up address, device, or bank account.
 
-Two buttons. **Clear** puts everything back: leaderboard, calibration vote, prize. **Confirm** marks the run invalid for good. Both are written to an audit log with the reviewer's name and note.
+Two buttons. **Clear** puts everything back: leaderboard, calibration vote, reward. **Confirm** marks the run invalid for good. Both are written to an audit log with the reviewer's name and note.
 
 ## Why this shape
 

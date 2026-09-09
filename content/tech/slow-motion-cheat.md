@@ -35,6 +35,6 @@ A cheat can still lie by *declaring* its slow-down as pause. So declared pause h
 
 ## The rollout rule
 
-None of this blocks a payout on day one. It flags, a human looks, and only once we have real device data does a flag become a gate. Shipping a detector in shadow mode first is how every anti-cheat team I have read about avoids punishing the wrong people.
+None of this blocks a reward on day one. It flags, a human looks, and only once we have real device data does a flag become a gate. Shipping a detector in shadow mode first is how every anti-cheat team I have read about avoids punishing the wrong people.
 
 *Next: proving the log we received is the log that was actually played.*

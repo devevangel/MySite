@@ -36,7 +36,7 @@ Unproven is not the same as guilty. A player on a bad mobile connection will som
 - Impossibilities block automatically.
 - Everything else routes to a human before money moves.
 
-A run with thin evidence still pays — after someone looks. Nobody honest loses a prize to a flaky network; nobody dishonest gets paid by a machine.
+A run with thin evidence still gets the reward — after someone looks. Nobody honest loses a reward to a flaky network; nobody dishonest gets credited by a machine.
 
 *Next: the one cheat that passes both replay and heartbeats — and how we closed it.*
 
