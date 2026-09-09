@@ -6,7 +6,7 @@ type: blog
 topic: game-dev
 project: gloomhunt
 published: 2026-09-02
-status: draft
+status: published
 summary: "Change how the game works and every old proof is about a different game. One command now moves the version, the proofs, and the fixtures together — or it refuses."
 tags: ["Game development", "Determinism", "Testing", "Server verification"]
 ---

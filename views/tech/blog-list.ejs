@@ -3,8 +3,53 @@
   <p>What I learned building real software: problems I hit, what I tried, and what actually worked. Written for anyone facing something similar.</p>
 </div>
 
+<form class="blog-toolbar" method="get" action="/tech/blog" role="search">
+  <div class="blog-search">
+    <label class="visually-hidden" for="blog-q">Search posts</label>
+    <input
+      id="blog-q"
+      class="blog-search-input"
+      type="search"
+      name="q"
+      value="<%= query %>"
+      placeholder="Search posts"
+      autocomplete="off"
+    >
+  </div>
+  <div class="blog-filter">
+    <label class="visually-hidden" for="blog-tag">Filter by topic</label>
+    <select id="blog-tag" class="blog-filter-select" name="tag">
+      <option value="" <%= !activeTag ? 'selected' : '' %>>All topics</option>
+      <% tags.forEach(function(entry) { %>
+        <option value="<%= entry.tag %>" <%= activeTag === entry.tag ? 'selected' : '' %>>
+          <%= entry.tag %> (<%= entry.count %>)
+        </option>
+      <% }); %>
+    </select>
+  </div>
+  <% if (preview) { %><input type="hidden" name="preview" value="1"><% } %>
+  <button type="submit" class="blog-toolbar-submit">Search</button>
+</form>
+
+<div class="blog-toolbar-meta">
+  <% if (filteredTotal === 0) { %>
+    <p class="blog-result-count">No posts match<% if (query) { %> “<%= query %>”<% } %><% if (activeTag) { %> in <%= activeTag %><% } %>.</p>
+  <% } else if (query || activeTag) { %>
+    <p class="blog-result-count">
+      Showing <%= rangeFrom %>–<%= rangeTo %> of <%= filteredTotal %>
+      <% if (query) { %> matching “<%= query %>”<% } %>
+      <% if (activeTag) { %> in <%= activeTag %><% } %>
+    </p>
+  <% } else { %>
+    <p class="blog-result-count">Showing <%= rangeFrom %>–<%= rangeTo %> of <%= filteredTotal %> posts</p>
+  <% } %>
+  <% if (query || activeTag) { %>
+    <a class="blog-clear" href="<%= blogListHref({ q: '', tag: '', page: 1 }) %>">Clear</a>
+  <% } %>
+</div>
+
 <% if (posts.length === 0) { %>
-  <p class="empty-state">No posts yet.</p>
+  <p class="empty-state">Try another search or topic.</p>
 <% } else { %>
   <div class="blog-list">
     <% posts.forEach(function(post) { %>
@@ -25,4 +70,28 @@
       </a>
     <% }); %>
   </div>
+<% } %>
+
+<% if (pageCount > 1) { %>
+  <nav class="blog-pagination" aria-label="Blog pages">
+    <% if (page > 1) { %>
+      <a class="blog-page-link" href="<%= blogListHref({ page: page - 1 }) %>">Previous</a>
+    <% } else { %>
+      <span class="blog-page-link is-disabled">Previous</span>
+    <% } %>
+    <div class="blog-page-numbers">
+      <% for (let i = 1; i <= pageCount; i++) { %>
+        <a
+          class="blog-page-link <%= i === page ? 'is-current' : '' %>"
+          href="<%= blogListHref({ page: i }) %>"
+          <% if (i === page) { %>aria-current="page"<% } %>
+        ><%= i %></a>
+      <% } %>
+    </div>
+    <% if (page < pageCount) { %>
+      <a class="blog-page-link" href="<%= blogListHref({ page: page + 1 }) %>">Next</a>
+    <% } else { %>
+      <span class="blog-page-link is-disabled">Next</span>
+    <% } %>
+  </nav>
 <% } %>

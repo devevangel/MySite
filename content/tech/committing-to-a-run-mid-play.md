@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-07-21
-status: draft
+status: published
 summary: "A rewind, a splice, or a run generated after the fact all produce a valid-looking log. The fix is to commit to the log every 30 seconds, before it is finished. Part 4."
 tags: ["Game development", "Anti-cheat", "Cryptography", "Liveness"]
 ---

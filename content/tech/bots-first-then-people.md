@@ -6,7 +6,7 @@ type: blog
 topic: live-ops
 project: gloomhunt
 published: 2026-09-05
-status: draft
+status: published
 summary: "A challenge still needs a difficulty number on day one. Until enough clean human runs exist, a ladder of bots is the guess — and rewards stay conservative."
 tags: ["Game development", "Live ops", "Bots", "Statistics"]
 ---

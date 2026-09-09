@@ -6,7 +6,7 @@ type: blog
 topic: live-ops
 project: gloomhunt
 published: 2026-05-12
-status: draft
+status: published
 summary: "How hard should 'survive 4 minutes' be for a ₦200 entry and a ₦2,500 reward? Instead of guessing, the board reads it off what real players already do. Part 2."
 tags: ["Game development", "Live ops", "Statistics", "Game economy"]
 ---

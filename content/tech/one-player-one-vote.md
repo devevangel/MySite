@@ -6,7 +6,7 @@ type: blog
 topic: live-ops
 project: gloomhunt
 published: 2026-05-19
-status: draft
+status: published
 summary: "If one enthusiast plays 200 runs, the difficulty curve becomes their difficulty curve. Calibration counts people, not attempts. Part 3."
 tags: ["Game development", "Live ops", "Statistics", "Testing"]
 ---

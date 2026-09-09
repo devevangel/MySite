@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-09-16
-status: draft
+status: published
 summary: "A review queue is useless if only the person who wrote the detectors can use it. Ours is a list, a sentence, a watch button, and two decisions."
 tags: ["Game development", "Anti-cheat", "Fraud review", "Admin tools"]
 ---

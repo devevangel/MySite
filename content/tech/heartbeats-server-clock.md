@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-06-23
-status: draft
+status: published
 summary: "Every 30 seconds the game reports in. The server, not the browser, writes down when. That timestamp is the backbone of proving a run was played live. Part 2."
 tags: ["Game development", "Anti-cheat", "Server verification", "Liveness"]
 ---

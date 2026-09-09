@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-09-03
-status: draft
+status: published
 summary: "If the whole future is known at the start, a program can plan the whole run. We now hand randomness out in pieces while the player is still playing."
 tags: ["Game development", "Anti-cheat", "Server verification", "Liveness"]
 ---

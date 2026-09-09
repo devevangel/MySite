@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-09-06
-status: draft
+status: published
 summary: "A yellow flag used to lock people out of paid play. That punished phones and nerves. Now it pauses the reward and leaves the start button alone."
 tags: ["Game development", "Anti-cheat", "Fraud review", "Operations"]
 ---

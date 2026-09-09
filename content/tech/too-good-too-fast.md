@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-08-18
-status: draft
+status: published
 summary: "Chess sites have no client to inspect, so they lean on statistics against a known population. We borrowed the idea for game runs and for accounts. Part 7."
 tags: ["Game development", "Anti-cheat", "Statistics", "Fraud review"]
 ---

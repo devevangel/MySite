@@ -18,29 +18,29 @@ Posts are markdown in `content/tech/` and `content/civic/`. Frontmatter + body. 
 |---|---|---|---|---|
 | `ship-challenges-without-code` | 2026-04-01 | game-dev | published | Challenges are data and rules, not a deploy. |
 | `wallet-balances-should-be-a-ledger` | 2026-04-15 | fintech | published | Wallet balance is a ledger, not a column. |
-| `verifying-paid-game-runs` | 2026-03-05 | anti-cheat | draft (updated Sep 2026) | Server replay; do not trust the browser. |
+| `verifying-paid-game-runs` | 2026-03-05 | anti-cheat | published | Server replay; do not trust the browser. |
 | `canvas-game-feel` | 2026-03-12 | game-dev | published | Canvas feel without Unity. |
 | `catching-lag-fps-hides` | 2026-03-20 | performance | published | Hitch detector; averages lie. |
 | `kill-switches-for-money-features` | 2026-04-28 | live-ops | published | Money features need a kill switch. |
-| `pricing-a-challenge-nobody-played` | 2026-05-12 | live-ops | draft (updated Sep 2026) | Price difficulty from a population, not a guess. |
-| `one-player-one-vote` | 2026-05-19 | live-ops | draft (updated Sep 2026) | Calibration counts people, not runs. |
+| `pricing-a-challenge-nobody-played` | 2026-05-12 | live-ops | published | Price difficulty from a population, not a guess. |
+| `one-player-one-vote` | 2026-05-19 | live-ops | published | Calibration counts people, not runs. |
 | `a-bounty-board-that-heals-itself` | 2026-05-26 | live-ops | published | Self-heal after launch. |
 | `too-easy-emergency-too-hard-wait` | 2026-06-02 | live-ops | published | Too easy is urgent; too hard can wait. |
-| `replay-proves-the-run-not-the-player` | 2026-06-09 | anti-cheat | draft (updated Sep 2026) | Replay proves the log, not the human. |
-| `heartbeats-server-clock` | 2026-06-23 | anti-cheat | draft (updated Sep 2026) | Server clock is the one a cheater cannot touch. |
+| `replay-proves-the-run-not-the-player` | 2026-06-09 | anti-cheat | published | Replay proves the log, not the human. |
+| `heartbeats-server-clock` | 2026-06-23 | anti-cheat | published | Server clock is the one a cheater cannot touch. |
 | `slow-motion-cheat` | 2026-07-07 | anti-cheat | published | Slow-mo passes replay; pace floor + stalls. |
-| `committing-to-a-run-mid-play` | 2026-07-21 | anti-cheat | draft (updated Sep 2026) | Prefix fingerprint each heartbeat. |
+| `committing-to-a-run-mid-play` | 2026-07-21 | anti-cheat | published | Prefix fingerprint each heartbeat. |
 | `hard-rules-vs-probabilities` | 2026-08-04 | anti-cheat | published | Impossibilities get rules; maybes get people. |
 | `money-should-wait` | 2026-08-11 | anti-cheat | published | Auto-pay refusal list; flags survive judgment. |
-| `too-good-too-fast` | 2026-08-18 | anti-cheat | draft (updated Sep 2026) | Outliers vs a known population. |
-| `anti-cheat-layers-not-yet-shipped` | 2026-08-25 | anti-cheat | draft (updated Sep 2026) | Researched layers; some later shipped. |
-| `engine-version-is-a-contract` | 2026-09-02 | game-dev | draft | One-command engine bump; version is a contract. |
-| `the-seed-you-cannot-see-ahead` | 2026-09-03 | anti-cheat | draft | Rolling seed pieces; no lookahead oracle. |
-| `a-bot-that-plays-like-a-person` | 2026-09-04 | game-dev | draft | Synthetic Hunter: see-only, three habits, composure. |
-| `bots-first-then-people` | 2026-09-05 | live-ops | draft | Bot ladder prices day one; humans take over. |
-| `flag-the-run-never-lock-the-player` | 2026-09-06 | anti-cheat | draft | Integrity pauses the reward, never blocks play. |
-| `a-changed-migration-is-a-broken-promise` | 2026-09-07 | operations | draft | Migration checksums after 2026-09-08 drift. |
-| `one-minute-to-decide-a-flagged-run` | 2026-09-16 | anti-cheat | draft | Review screen: sentence, watch, two buttons. |
+| `too-good-too-fast` | 2026-08-18 | anti-cheat | published | Outliers vs a known population. |
+| `anti-cheat-layers-not-yet-shipped` | 2026-08-25 | anti-cheat | published | Researched layers; some later shipped. |
+| `engine-version-is-a-contract` | 2026-09-02 | game-dev | published | One-command engine bump; version is a contract. |
+| `the-seed-you-cannot-see-ahead` | 2026-09-03 | anti-cheat | published | Rolling seed pieces; no lookahead oracle. |
+| `a-bot-that-plays-like-a-person` | 2026-09-04 | game-dev | published | Synthetic Hunter: see-only, three habits, composure. |
+| `bots-first-then-people` | 2026-09-05 | live-ops | published | Bot ladder prices day one; humans take over. |
+| `flag-the-run-never-lock-the-player` | 2026-09-06 | anti-cheat | published | Integrity pauses the reward, never blocks play. |
+| `a-changed-migration-is-a-broken-promise` | 2026-09-07 | operations | published | Migration checksums after 2026-09-08 drift. |
+| `one-minute-to-decide-a-flagged-run` | 2026-09-16 | anti-cheat | published | Review screen: sentence, watch, two buttons. |
 
 ### Ideas already used (off the table unless the build moved again)
 

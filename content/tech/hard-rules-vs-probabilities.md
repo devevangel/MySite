@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-08-04
-status: draft
+status: published
 summary: "The most important anti-cheat decision is not what to detect. It is what to do when you detect it. Part 5: the review queue."
 tags: ["Game development", "Anti-cheat", "Fraud review", "Operations"]
 ---

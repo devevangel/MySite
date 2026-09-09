@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-03-05
-status: draft
+status: published
 summary: "If money is on the line, the server has to replay the run and check the result  - not take the client's word for it."
 tags: ["Game development", "Anti-cheat", "Server verification", "Paid challenges"]
 ---

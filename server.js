@@ -3,7 +3,26 @@ import express from 'express';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { loadSiteData } from './lib/data.js';
-import { loadPosts, getPost } from './lib/content.js';
+import { loadPosts, getPost, collectPostTags, resolvePostTag, filterPosts, paginateItems } from './lib/content.js';
+
+const BLOG_PAGE_SIZE = 8;
+
+function parsePositiveInt(value, fallback) {
+  const n = Number.parseInt(value, 10);
+  return Number.isFinite(n) && n > 0 ? n : fallback;
+}
+
+function blogListHref({ q = '', tag = '', page = 1, preview = false } = {}) {
+  const params = new URLSearchParams();
+  const query = String(q || '').trim();
+  const topic = String(tag || '').trim();
+  if (query) params.set('q', query);
+  if (topic) params.set('tag', topic);
+  if (page > 1) params.set('page', String(page));
+  if (preview) params.set('preview', '1');
+  const qs = params.toString();
+  return qs ? `/tech/blog?${qs}` : '/tech/blog';
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -127,10 +146,33 @@ app.get('/tech/projects', (req, res) => {
 });
 
 app.get('/tech/blog', (req, res) => {
-  const posts = loadPosts('tech', { includeDrafts: allowDrafts(req) });
+  const allPosts = loadPosts('tech', { includeDrafts: allowDrafts(req) });
+  const q = typeof req.query.q === 'string' ? req.query.q : '';
+  const requestedTag = typeof req.query.tag === 'string' ? req.query.tag : '';
+  const tags = collectPostTags(allPosts);
+  const activeTag = resolvePostTag(tags, requestedTag);
+  const filtered = filterPosts(allPosts, { q, tag: activeTag });
+  const paged = paginateItems(filtered, parsePositiveInt(req.query.page, 1), BLOG_PAGE_SIZE);
+  const preview = allowDrafts(req);
+
   renderPage(res, 'tech/layout', 'tech/blog-list', locals(req, {
-    posts,
+    posts: paged.items,
     pageTitle: 'Blog',
+    query: q.trim(),
+    activeTag,
+    tags,
+    page: paged.page,
+    pageCount: paged.pageCount,
+    filteredTotal: paged.total,
+    rangeFrom: paged.total === 0 ? 0 : (paged.page - 1) * paged.perPage + 1,
+    rangeTo: Math.min(paged.page * paged.perPage, paged.total),
+    blogListHref: (overrides = {}) => blogListHref({
+      q: q.trim(),
+      tag: activeTag,
+      page: 1,
+      preview,
+      ...overrides,
+    }),
   }));
 });
 

@@ -6,7 +6,7 @@ type: blog
 topic: operations
 project: gloomhunt
 published: 2026-09-07
-status: draft
+status: published
 summary: "We found a live database that did not match the files we thought had built it. Applied migrations are frozen now. A change is a new file, or the server will not start."
 tags: ["Backend", "Databases", "Operations", "Testing"]
 ---

@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-06-09
-status: draft
+status: published
 summary: "Server-side replay proves the run is real. It says nothing about whether a human played it. Part 1 of a series on securing paid game runs."
 tags: ["Game development", "Anti-cheat", "Server verification", "Paid challenges"]
 ---

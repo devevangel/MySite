@@ -6,7 +6,7 @@ type: blog
 topic: anti-cheat
 project: gloomhunt
 published: 2026-08-25
-status: draft
+status: published
 summary: "Six more layers, ranked by value, and an honest statement of what no layer can catch. Part 8, closing the series."
 tags: ["Game development", "Anti-cheat", "Security", "Roadmap"]
 ---

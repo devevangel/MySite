@@ -6,7 +6,7 @@ type: blog
 topic: game-dev
 project: gloomhunt
 published: 2026-09-04
-status: draft
+status: published
 summary: "We needed players before we had players. The bot only sees what a screen would show, has a few habits, and falls apart under pressure the way people do."
 tags: ["Game development", "Bots", "Game design", "Testing"]
 ---
