@@ -16,8 +16,8 @@ Posts are markdown in `content/tech/` and `content/civic/`. Frontmatter + body. 
 
 | Slug | Date | Topic | Status | One line |
 |---|---|---|---|---|
-| `ship-challenges-without-code` | 2025-03-18 | game-dev | published | Challenges are data and rules, not a deploy. |
-| `wallet-balances-should-be-a-ledger` | 2025-06-02 | fintech | published | Wallet balance is a ledger, not a column. |
+| `ship-challenges-without-code` | 2026-04-01 | game-dev | published | Challenges are data and rules, not a deploy. |
+| `wallet-balances-should-be-a-ledger` | 2026-04-15 | fintech | published | Wallet balance is a ledger, not a column. |
 | `verifying-paid-game-runs` | 2026-03-05 | anti-cheat | draft (updated Sep 2026) | Server replay; do not trust the browser. |
 | `canvas-game-feel` | 2026-03-12 | game-dev | published | Canvas feel without Unity. |
 | `catching-lag-fps-hides` | 2026-03-20 | performance | published | Hitch detector; averages lie. |

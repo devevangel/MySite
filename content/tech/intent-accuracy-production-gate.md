@@ -5,7 +5,7 @@ section: tech
 type: blog
 topic: enterprise-ai
 project: eli-lilly
-published: 2025-02-06
+published: 2026-02-25
 status: published
 summary: "In regulated chatbots, a fixed accuracy threshold beats chasing the highest number on a chart."
 tags: ["AI", "NLP", "Enterprise", "Pharma"]

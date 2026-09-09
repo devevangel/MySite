@@ -5,7 +5,7 @@ section: tech
 type: blog
 topic: enterprise-ai
 project: eli-lilly
-published: 2024-10-14
+published: 2026-02-18
 status: published
 summary: "NLU improvements are useless if validation takes longer than the sprint. I built a tool the team adopted."
 tags: ["AI", "Testing", "React", "Enterprise"]

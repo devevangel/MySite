@@ -5,7 +5,7 @@ section: tech
 type: blog
 topic: game-dev
 project: gloomhunt
-published: 2025-03-18
+published: 2026-04-01
 status: published
 summary: "Paid challenges should be data and rules, not a new deploy every time someone invents a variant."
 tags: ["Game development", "Configuration", "Backend", "Live ops"]

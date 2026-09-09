@@ -5,7 +5,7 @@ section: tech
 type: blog
 topic: realtime
 project: kevvlar
-published: 2021-09-14
+published: 2026-01-14
 status: published
 summary: "Drag a card to Done and every teammate sees it move  - no refresh."
 tags: ["Real-time", "WebSockets", "SaaS", "Kanban"]

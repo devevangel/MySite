@@ -5,7 +5,7 @@ section: tech
 type: blog
 topic: realtime
 project: kevvlar
-published: 2022-02-18
+published: 2026-01-28
 status: published
 summary: "Twilio video in an iframe shipped fast. Cross-origin pain shipped with it."
 tags: ["Video calls", "Integrations", "iframes", "SaaS"]

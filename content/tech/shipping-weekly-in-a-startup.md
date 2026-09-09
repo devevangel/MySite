@@ -5,7 +5,7 @@ section: tech
 type: blog
 topic: startup
 project: weekend-social
-published: 2022-08-20
+published: 2026-02-11
 status: published
 summary: "Short cycles force clarity. Long planning sessions do not survive contact with production."
 tags: ["Startups", "Full-stack", "React", "Shipping"]

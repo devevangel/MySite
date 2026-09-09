@@ -5,7 +5,7 @@ section: tech
 type: blog
 topic: fintech
 project: gloomhunt
-published: 2025-06-02
+published: 2026-04-15
 status: published
 summary: "Incrementing one balance column breaks the moment retries, webhooks, or partial failures appear."
 tags: ["Payments", "Databases", "Game development", "Ledger"]
